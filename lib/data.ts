@@ -51,7 +51,7 @@ export const projects = [
     tagline: 'Distributed AI Agent Studio',
     description:
       'A distributed agent orchestration platform for building multi-step AI workflows. Connects multiple LLMs, tools, and data sources into reliable agent pipelines with retry logic and observability.',
-    image: '/images/hero-cover.png',
+    image: '/images/hivemind.png',
     stack: ['Node.js', 'TypeScript', 'OpenAI', 'Anthropic Claude', 'Redis', 'PostgreSQL', 'Docker'],
     features: [
       'Multi-agent orchestration with planning and recovery',
