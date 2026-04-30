@@ -129,12 +129,12 @@ export default function Hero() {
             <div className="absolute -inset-4 bg-gradient-to-br from-accent/40 via-accent/20 to-info/20 rounded-3xl blur-2xl opacity-60 animate-pulse-slow" />
             <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-3xl overflow-hidden glass-strong border border-white/10 shadow-2xl">
               <Image
-                src="/images/profile.png"
+                src="/images/profile.jpg"
                 alt="M. Arslan — Backend AI Developer"
                 fill
                 priority
                 sizes="(max-width: 768px) 288px, 384px"
-                className="object-cover"
+                className="object-cover object-top"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
             </div>
