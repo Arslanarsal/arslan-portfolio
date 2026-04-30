@@ -42,17 +42,16 @@ export default function About() {
           >
             <p>{profile.about}</p>
             <p>
-              I work like a one-person engineering team — backend, AI layer,
-              database, infra, and CI/CD all under one roof. No freelancer
-              handoffs, no &quot;that&apos;s not my part&quot; when something breaks. Recent
-              shipped work: <span className="text-light">ChatPilot</span>, a
-              multi-tenant WhatsApp CRM SaaS live in production, and custom AI
-              agent systems for international clients.
+              I work like a one person team — backend, AI, database, and deploy
+              all done by me. No handoffs, no &quot;that&apos;s not my job&quot; when
+              something breaks. My latest work is{' '}
+              <span className="text-light">ChatPilot</span>, a live WhatsApp CRM
+              that real businesses use today.
             </p>
             <p>
-              When I&apos;m not building, I&apos;m grinding algorithms — 700+ LeetCode
-              problems solved and ICPC 2025 Regional participation. Strong
-              fundamentals matter more than ever in the AI era.
+              When I am not coding for clients, I am solving algorithm problems
+              — 700+ LeetCode done and joined ICPC 2025 Regional. Strong basics
+              matter, even more now with AI.
             </p>
           </motion.div>
 

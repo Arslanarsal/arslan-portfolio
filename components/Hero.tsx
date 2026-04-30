@@ -134,7 +134,8 @@ export default function Hero() {
                 fill
                 priority
                 sizes="(max-width: 768px) 288px, 384px"
-                className="object-cover object-top"
+                className="object-cover"
+                style={{ objectPosition: '50% 70%' }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
             </div>
