@@ -11,7 +11,7 @@ export const profile = {
   phone: '+92 342 3407767',
   linkedin: 'https://linkedin.com/in/m-arslan-aa21a0246',
   github: 'https://github.com/Arslanarsal',
-  upwork: 'https://www.upwork.com/freelancers/~arslanarsal',
+  upwork: 'https://www.upwork.com/freelancers/~01731d026ab6d0a9b9',
   website: 'https://chat-pilot.dev',
   yearsExperience: 3,
   about: `I am a Full Stack Developer and AI Automation Engineer with 3+ years of hands-on experience building production systems for real clients. I cover the full stack — backend APIs, AI agents, Meta API integrations, ad funnels, automation pipelines, and DevOps — so a client only needs one person to ship the whole product. My main work right now is ChatPilot, a live WhatsApp CRM with AI bots used by clinics and agencies in Pakistan and the UAE. On Upwork I am a top-rated freelancer with 5.0 reviews, working with clients in the UAE, Europe, and the US on WhatsApp Business setup, Meta Ads funnels, n8n / Make.com automation, voice and call agents, and Claude Code agentic systems.`,
@@ -203,7 +203,7 @@ export const upworkAchievement = {
     member: 'Member since Sep 12, 2011',
     type: 'Expert · willing to pay higher rates',
   },
-  url: 'https://www.upwork.com/freelancers/~arslanarsal',
+  url: 'https://www.upwork.com/freelancers/~01731d026ab6d0a9b9',
 };
 
 export const achievements = [
