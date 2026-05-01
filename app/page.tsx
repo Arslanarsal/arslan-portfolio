@@ -5,6 +5,7 @@ import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
 import AIAutomation from '@/components/AIAutomation';
 import Experience from '@/components/Experience';
+import Upwork from '@/components/Upwork';
 import Achievements from '@/components/Achievements';
 import Gallery from '@/components/Gallery';
 import Contact from '@/components/Contact';
@@ -20,6 +21,7 @@ export default function Home() {
       <Projects />
       <AIAutomation />
       <Experience />
+      <Upwork />
       <Achievements />
       <Gallery />
       <Contact />

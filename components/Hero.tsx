@@ -31,7 +31,7 @@ export default function Hero() {
               <span className="relative rounded-full bg-success w-2 h-2" />
             </span>
             <span className="text-xs font-medium text-light/80">
-              Available for new opportunities
+              3+ years experience · Available for new projects
             </span>
           </motion.div>
 
@@ -51,7 +51,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mt-4 text-xl md:text-2xl text-light/80 font-medium"
           >
-            Backend AI Developer · Agentic Systems · DevOps
+            Full Stack Developer · Meta API & Ads Funnels · AI Agents · Claude Code · DevOps
           </motion.h2>
 
           <motion.p
@@ -60,10 +60,37 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="mt-6 text-base md:text-lg text-muted max-w-2xl leading-relaxed"
           >
-            I build production-grade backend systems where APIs, AI agents, and
-            DevOps come together as one stack. Currently shipping live SaaS
-            products and AI workflows for clients across the world.
+            I build full stack systems where backend APIs, AI agents, Meta API
+            integrations, ad funnels, n8n / Make automation, and DevOps come
+            together as one stack. 3+ years shipping real SaaS and client work
+            for businesses in Pakistan, UAE, Europe, and the US.
           </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.35 }}
+            className="mt-6 flex flex-wrap gap-2"
+          >
+            {[
+              'Full Stack',
+              'Meta API Expert',
+              'WhatsApp Business',
+              'Meta Ads Funnels',
+              'AI Agents',
+              'Claude Code',
+              'n8n / Make',
+              'Call Agents',
+              'DevOps',
+            ].map((tag) => (
+              <span
+                key={tag}
+                className="text-xs px-3 py-1.5 rounded-full bg-elevated/70 border border-white/10 text-light/80"
+              >
+                {tag}
+              </span>
+            ))}
+          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -83,7 +110,7 @@ export default function Hero() {
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-white/10 hover:border-white/20 bg-elevated/50 hover:bg-elevated text-light font-semibold transition-all"
             >
               <Mail size={18} />
-              Contact Me
+              Hire Me
             </a>
           </motion.div>
 
@@ -111,6 +138,15 @@ export default function Hero() {
               <Linkedin size={16} />
               LinkedIn
             </a>
+            <a
+              href={profile.upwork}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 hover:text-accent transition-colors"
+            >
+              <Sparkles size={16} />
+              Upwork (5.0★)
+            </a>
             <span className="inline-flex items-center gap-2">
               <MapPin size={16} />
               {profile.location}
@@ -130,7 +166,7 @@ export default function Hero() {
             <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-3xl overflow-hidden glass-strong border border-white/10 shadow-2xl">
               <Image
                 src="/images/profile.jpg"
-                alt="M. Arslan — Backend AI Developer"
+                alt="M. Arslan — Full Stack Developer"
                 fill
                 priority
                 sizes="(max-width: 768px) 288px, 384px"
@@ -148,8 +184,8 @@ export default function Hero() {
             >
               <Sparkles size={18} className="text-accent" />
               <div>
-                <div className="text-xs text-muted">Building with</div>
-                <div className="text-sm font-semibold">AI Agents</div>
+                <div className="text-xs text-muted">Top-Rated on</div>
+                <div className="text-sm font-semibold">Upwork · 5.0★</div>
               </div>
             </motion.div>
           </motion.div>

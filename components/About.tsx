@@ -5,9 +5,9 @@ import { Code2, Cpu, Cloud, Zap } from 'lucide-react';
 import { profile } from '@/lib/data';
 
 const stats = [
-  { label: 'Years of Experience', value: '2+', icon: Code2 },
+  { label: 'Years of Experience', value: '3+', icon: Code2 },
   { label: 'LeetCode Problems', value: '700+', icon: Cpu },
-  { label: 'Production SaaS Live', value: '1', icon: Cloud },
+  { label: 'Upwork Rating', value: '5.0★', icon: Cloud },
   { label: 'API Speed Boost', value: '40%', icon: Zap },
 ];
 
@@ -27,8 +27,8 @@ export default function About() {
         >
           <span className="text-sm font-mono text-accent">// 01 — About</span>
           <h2 className="mt-2 text-4xl md:text-5xl font-bold tracking-tight">
-            Engineering at the <br />
-            <span className="text-gradient-orange">intersection of</span> backend & AI
+            Full stack, <span className="text-gradient-orange">end to end</span> <br />
+            backend · AI · Meta API · DevOps
           </h2>
         </motion.div>
 
@@ -42,16 +42,18 @@ export default function About() {
           >
             <p>{profile.about}</p>
             <p>
-              I work like a one person team — backend, AI, database, and deploy
-              all done by me. No handoffs, no &quot;that&apos;s not my job&quot; when
-              something breaks. My latest work is{' '}
-              <span className="text-light">ChatPilot</span>, a live WhatsApp CRM
-              that real businesses use today.
+              I work like a one-person team — backend, frontend, AI, database,
+              Meta API, ad funnels, automation, and deploy all done by me. No
+              handoffs, no &quot;that&apos;s not my job&quot; when something breaks.
+              My live SaaS is <span className="text-light">ChatPilot</span>, a
+              WhatsApp CRM with AI bots used by clinics and agencies today.
             </p>
             <p>
-              When I am not coding for clients, I am solving algorithm problems
-              — 700+ LeetCode done and joined ICPC 2025 Regional. Strong basics
-              matter, even more now with AI.
+              On <span className="text-light">Upwork</span> I am a top-rated
+              freelancer with a 5.0 rating — clients call me a &quot;Great Full
+              Stack Developer&quot;. When I am not shipping client work, I am
+              solving algorithm problems — 700+ LeetCode done and joined ICPC
+              2025 Regional.
             </p>
           </motion.div>
 

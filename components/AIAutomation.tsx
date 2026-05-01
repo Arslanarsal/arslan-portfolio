@@ -9,6 +9,8 @@ import {
   UserPlus,
   Sparkles,
   CheckCircle2,
+  TrendingUp,
+  Target,
 } from 'lucide-react';
 import { aiCapabilities } from '@/lib/data';
 
@@ -19,21 +21,27 @@ const iconMap: Record<string, any> = {
   Network,
   UserPlus,
   Sparkles,
+  TrendingUp,
+  Target,
 };
 
 const platforms = [
   { name: 'Meta Cloud API', tag: 'Official' },
   { name: 'WhatsApp Business', tag: 'Verified' },
   { name: 'Instagram Graph API', tag: 'Active' },
+  { name: 'Meta Ads Manager', tag: 'Funnels' },
+  { name: 'Conversion API', tag: 'Tracking' },
   { name: 'Stripe', tag: 'Live' },
   { name: 'Shopify', tag: 'Connected' },
   { name: 'HubSpot', tag: 'Synced' },
   { name: 'OpenAI GPT-4', tag: 'Production' },
   { name: 'Anthropic Claude', tag: 'Production' },
-  { name: 'n8n Cloud', tag: 'Self-Hosted' },
   { name: 'Claude Code MCP', tag: 'Custom' },
+  { name: 'n8n Self-Hosted', tag: 'Docker' },
+  { name: 'Make.com', tag: 'Active' },
   { name: 'PostgreSQL', tag: 'Live' },
   { name: 'Redis', tag: 'Cache' },
+  { name: 'Vercel', tag: 'Deployed' },
 ];
 
 export default function AIAutomation() {

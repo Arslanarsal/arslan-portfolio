@@ -11,6 +11,7 @@ const links = [
   { href: '#projects', label: 'Projects' },
   { href: '#ai', label: 'AI & Automation' },
   { href: '#experience', label: 'Experience' },
+  { href: '#upwork', label: 'Upwork' },
   { href: '#gallery', label: 'Gallery' },
   { href: '#contact', label: 'Contact' },
 ];

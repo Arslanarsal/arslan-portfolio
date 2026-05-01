@@ -10,16 +10,24 @@ import {
   Workflow,
   Shield,
   Wrench,
+  Layers,
+  TrendingUp,
 } from 'lucide-react';
 import { skills } from '@/lib/data';
 
 const categoryIcons: Record<string, any> = {
-  Backend: Server,
+  'Full Stack': Layers,
+  'Backend & APIs': Server,
   'AI & Agents': Brain,
-  Databases: Database,
-  'DevOps & Cloud': Cloud,
-  Monitoring: Activity,
+  'Meta API & Ads': TrendingUp,
   Automation: Workflow,
+  'Data & Funnels': Database,
+  'DevOps & Cloud': Cloud,
+  'Monitoring & QA': Activity,
+  // Legacy fallbacks
+  Backend: Server,
+  Databases: Database,
+  Monitoring: Activity,
   'API & Security': Shield,
   Tools: Wrench,
 };
