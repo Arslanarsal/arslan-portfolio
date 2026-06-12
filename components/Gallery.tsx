@@ -13,7 +13,7 @@ const featured = [
     description:
       'Took part in Devathon 2024, a major hackathon hosted at Devsinc with top tech companies.',
     icon: Code,
-    accent: 'from-pink-500/30 to-rose-500/20',
+    accent: 'from-cyan-500/30 to-sky-500/20',
     type: 'Hackathon',
   },
   {
@@ -43,7 +43,7 @@ const featured = [
     description:
       'Joined TAAKRA 2025 — a coding event at UCP with the theme Victory or Vengeance.',
     icon: Trophy,
-    accent: 'from-orange-500/30 to-red-500/20',
+    accent: 'from-teal-500/30 to-emerald-500/20',
     type: 'Event',
   },
 ];

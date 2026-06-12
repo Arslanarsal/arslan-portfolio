@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import {
   Bot,
@@ -26,22 +27,22 @@ const iconMap: Record<string, any> = {
 };
 
 const platforms = [
-  { name: 'Meta Cloud API', tag: 'Official' },
-  { name: 'WhatsApp Business', tag: 'Verified' },
-  { name: 'Instagram Graph API', tag: 'Active' },
-  { name: 'Meta Ads Manager', tag: 'Funnels' },
-  { name: 'Conversion API', tag: 'Tracking' },
-  { name: 'Stripe', tag: 'Live' },
-  { name: 'Shopify', tag: 'Connected' },
-  { name: 'HubSpot', tag: 'Synced' },
+  { name: 'Node.js', tag: 'Core' },
+  { name: 'NestJS', tag: 'APIs' },
+  { name: 'Express.js', tag: 'APIs' },
+  { name: 'PostgreSQL', tag: 'Live' },
+  { name: 'MongoDB', tag: 'Live' },
+  { name: 'Redis', tag: 'Cache' },
+  { name: 'Docker', tag: 'Containers' },
+  { name: 'Kubernetes', tag: 'Orchestration' },
+  { name: 'GitHub Actions', tag: 'CI/CD' },
+  { name: 'Prometheus', tag: 'Metrics' },
+  { name: 'Grafana', tag: 'Dashboards' },
+  { name: 'DigitalOcean', tag: 'Cloud' },
   { name: 'OpenAI GPT-4', tag: 'Production' },
   { name: 'Anthropic Claude', tag: 'Production' },
   { name: 'Claude Code MCP', tag: 'Custom' },
   { name: 'n8n Self-Hosted', tag: 'Docker' },
-  { name: 'Make.com', tag: 'Active' },
-  { name: 'PostgreSQL', tag: 'Live' },
-  { name: 'Redis', tag: 'Cache' },
-  { name: 'Vercel', tag: 'Deployed' },
 ];
 
 export default function AIAutomation() {
@@ -64,19 +65,19 @@ export default function AIAutomation() {
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 border border-accent/20 mb-4">
             <Sparkles size={14} className="text-accent" />
-            <span className="text-xs font-mono text-accent">// 04 — AI & Automation</span>
+            <span className="text-xs font-mono text-accent">// AI &amp; Automation</span>
           </div>
 
           <h2 className="text-4xl md:text-6xl font-bold tracking-tight leading-[1.05]">
-            From <span className="text-gradient-orange">AI agents</span> <br />
-            to live business <br />
-            automation.
+            <span className="text-gradient-orange">AI agents</span> <br />
+            wired into real <br />
+            backend systems.
           </h2>
 
           <p className="mt-6 text-lg text-light/70 max-w-2xl">
-            I build the entire AI infrastructure layer — agents, workflows, and
-            integrations — that connect everything from Meta Ads to Stripe into
-            a single intelligent system.
+            I build the AI layer that sits on top of solid backends — agents,
+            LLM pipelines, custom MCP servers, and workflows that call real
+            tools, take actions, and run reliably in production.
           </p>
         </motion.div>
 
@@ -145,10 +146,10 @@ export default function AIAutomation() {
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
             <div>
               <h3 className="text-xl md:text-2xl font-bold">
-                Connected Platforms & APIs
+                Stack &amp; Tooling
               </h3>
               <p className="text-sm text-muted mt-1">
-                Production integrations across the modern automation stack
+                The backend, DevOps, and AI tools I run in production
               </p>
             </div>
             <span className="text-xs font-mono text-accent">
@@ -179,13 +180,13 @@ export default function AIAutomation() {
           transition={{ duration: 0.5 }}
           className="mt-12 text-center"
         >
-          <a
-            href="#contact"
+          <Link
+            href="/contact"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-accent text-white font-semibold hover:bg-accent-600 transition-colors shadow-lg shadow-accent/20"
           >
             <Sparkles size={18} />
             Build an AI System With Me
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>

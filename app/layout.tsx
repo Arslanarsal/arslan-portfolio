@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from 'next';
 import { Inter, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
+import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -15,36 +17,40 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'M. Arslan — Backend AI Developer',
+  title: 'Muhammad Arslan — Backend Engineer · DevOps & AI Agents',
   description:
-    'Backend AI Developer specializing in Node.js, NestJS, AI agents, and DevOps. Building scalable APIs, agentic AI systems, and multi-tenant SaaS products for international clients.',
+    'Backend Engineer specializing in Node.js, NestJS, PostgreSQL, Docker, Kubernetes, CI/CD, and AI agents. Building scalable APIs, reliable cloud infrastructure, and production AI systems.',
   keywords: [
-    'Backend Developer',
-    'AI Developer',
+    'Backend Engineer',
+    'DevOps Engineer',
     'Node.js',
     'NestJS',
     'TypeScript',
+    'Docker',
+    'Kubernetes',
+    'CI/CD',
+    'PostgreSQL',
+    'MongoDB',
     'AI Agents',
-    'DevOps',
     'OpenAI',
     'Claude',
     'Pakistan',
-    'M Arslan',
+    'Muhammad Arslan',
   ],
-  authors: [{ name: 'M. Arslan' }],
-  creator: 'M. Arslan',
+  authors: [{ name: 'Muhammad Arslan' }],
+  creator: 'Muhammad Arslan',
   openGraph: {
-    title: 'M. Arslan — Backend AI Developer',
+    title: 'Muhammad Arslan — Backend Engineer · DevOps & AI Agents',
     description:
-      'Building scalable AI-powered backend systems and SaaS products. Node.js · NestJS · AI Agents · DevOps.',
+      'Scalable backend systems, DevOps, and production AI agents. Node.js · NestJS · Docker · Kubernetes · CI/CD.',
     type: 'website',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'M. Arslan — Backend AI Developer',
+    title: 'Muhammad Arslan — Backend Engineer',
     description:
-      'Building scalable AI-powered backend systems and SaaS products.',
+      'Scalable backend systems, DevOps, and production AI agents.',
   },
   robots: {
     index: true,
@@ -53,7 +59,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: '#0a0e1a',
+  themeColor: '#0c1222',
   width: 'device-width',
   initialScale: 1,
 };
@@ -66,7 +72,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${jetbrains.variable}`}>
       <body className="bg-background text-light font-sans antialiased">
-        {children}
+        <Navigation />
+        <main className="relative min-h-screen">{children}</main>
+        <Footer />
       </body>
     </html>
   );

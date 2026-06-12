@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Trophy, Code2, Rocket, Zap, Brain, Target, Star } from 'lucide-react';
+import { Trophy, Code2, Rocket, Zap, Brain, Target, Star, Award } from 'lucide-react';
 import { achievements } from '@/lib/data';
 
 const iconMap: Record<string, any> = {
@@ -12,6 +12,7 @@ const iconMap: Record<string, any> = {
   Brain,
   Target,
   Star,
+  Award,
 };
 
 export default function Achievements() {

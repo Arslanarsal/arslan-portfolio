@@ -3,9 +3,9 @@
 export const profile = {
   name: 'M. Arslan',
   fullName: 'Muhammad Arslan',
-  title: 'Full Stack Developer · AI & Automation Engineer',
+  title: 'Backend Engineer · DevOps & AI Agents',
   tagline:
-    'Full Stack Developer building backend systems, AI agents, Meta Ad funnels, and Claude Code automation for real businesses.',
+    'Backend engineer building scalable APIs, AI agent systems, and reliable cloud infrastructure with Node.js, NestJS, Docker, and Kubernetes.',
   location: 'Gujrat, Punjab, Pakistan',
   email: 'arslanarsal455@gmail.com',
   phone: '+92 342 3407767',
@@ -14,22 +14,15 @@ export const profile = {
   upwork: 'https://www.upwork.com/freelancers/~01731d026ab6d0a9b9',
   website: 'https://chat-pilot.dev',
   yearsExperience: 3,
-  about: `I am a Full Stack Developer and AI Automation Engineer with 3+ years of hands-on experience building production systems for real clients. I cover the full stack — backend APIs, AI agents, Meta API integrations, ad funnels, automation pipelines, and DevOps — so a client only needs one person to ship the whole product. My main work right now is ChatPilot, a live WhatsApp CRM with AI bots used by clinics and agencies in Pakistan and the UAE. On Upwork I am a top-rated freelancer with 5.0 reviews, working with clients in the UAE, Europe, and the US on WhatsApp Business setup, Meta Ads funnels, n8n / Make.com automation, voice and call agents, and Claude Code agentic systems.`,
+  about: `I am a Backend Engineer with 3+ years of hands-on experience building production systems for real clients. I design and ship scalable REST APIs and microservices with Node.js, NestJS, and Express, backed by PostgreSQL, MongoDB, and Redis. On the infrastructure side I containerize services with Docker, deploy on Kubernetes and DigitalOcean, run CI/CD pipelines, and set up monitoring with Prometheus and Grafana so systems stay reliable under real load. I also build AI agent systems with OpenAI and Claude — chat, voice, and tool-calling agents that run in production. My focus is clean, maintainable code and systems that are fast, observable, and built to last.`,
 };
 
 export const skills = {
-  'Full Stack': [
+  'Backend & APIs': [
     'Node.js',
     'NestJS',
     'Express.js',
-    'Next.js',
-    'React',
     'TypeScript',
-    'JavaScript',
-    'Python',
-    'Tailwind CSS',
-  ],
-  'Backend & APIs': [
     'REST APIs',
     'GraphQL',
     'WebSockets',
@@ -37,7 +30,38 @@ export const skills = {
     'JWT Auth',
     'OAuth 2.0',
     'RBAC',
-    'Swagger',
+  ],
+  'Databases': [
+    'PostgreSQL',
+    'MongoDB',
+    'Redis',
+    'Prisma ORM',
+    'Data Modeling',
+    'Query Optimization',
+    'Caching',
+    'ETL',
+  ],
+  'DevOps & Cloud': [
+    'Docker',
+    'Kubernetes',
+    'Helm',
+    'CI/CD',
+    'GitHub Actions',
+    'Nginx',
+    'DigitalOcean',
+    'AWS',
+    'Linux',
+    'Bash',
+  ],
+  'Monitoring & QA': [
+    'Prometheus',
+    'Grafana',
+    'Log Management',
+    'Alerts & Dashboards',
+    'Health Checks',
+    'Jest',
+    'Unit Testing',
+    'Code Review',
   ],
   'AI & Agents': [
     'OpenAI API',
@@ -48,174 +72,177 @@ export const skills = {
     'LLM Integration',
     'RAG',
     'Function Calling',
-    'LangChain',
-  ],
-  'Meta API & Ads': [
-    'Meta Cloud API',
-    'WhatsApp Business API',
-    'Instagram Graph API',
-    'Meta Ads Manager',
-    'Ad Funnels',
-    'Conversion API',
-    'Pixel Tracking',
-    'Audience Targeting',
-    'Embedded Signup',
-  ],
-  Automation: [
-    'n8n',
-    'Make.com',
-    'Zapier',
-    'Workflow Automation',
-    'Webhooks',
-    'Scheduled Jobs',
     'Custom MCP Servers',
   ],
-  'Data & Funnels': [
-    'PostgreSQL',
-    'MongoDB',
-    'Redis',
-    'Prisma ORM',
-    'Funnel Analytics',
-    'Data Pipelines',
-    'Query Optimization',
-    'ETL',
+  'Automation & Integrations': [
+    'n8n',
+    'Make.com',
+    'Webhooks',
+    'Scheduled Jobs',
+    'Workflow Automation',
+    'Third-party APIs',
+    'WhatsApp / Meta Cloud API',
   ],
-  'DevOps & Cloud': [
-    'Docker',
-    'Nginx',
-    'GitHub Actions',
-    'CI/CD',
-    'DigitalOcean',
-    'AWS',
-    'Vercel',
-    'Linux',
-    'Bash',
-  ],
-  'Monitoring & QA': [
-    'Grafana',
-    'Prometheus',
-    'Log Management',
-    'Alerts & Dashboards',
-    'Jest',
-    'Unit Testing',
-    'Code Review',
+  'Languages & CP': [
+    'C++',
+    'JavaScript',
+    'Python',
+    'SQL',
+    'Data Structures',
+    'Algorithms',
+    'Dynamic Programming',
+    'Graphs',
   ],
 };
 
 export const projects = [
   {
+    slug: 'chatpilot',
     name: 'ChatPilot',
-    tagline: 'WhatsApp CRM with AI Bots',
+    tagline: 'Multi-tenant AI CRM Platform',
     description:
-      'A multi-tenant WhatsApp CRM built for clinics and service businesses. AI bots chat with customers 24/7, staff can take over any time, and many businesses run on the same system without sharing data.',
+      'A full multi-tenant AI CRM platform built on business messaging. It pairs a NestJS backend, a dedicated messaging server, a real-time web dashboard, and an AI agent layer so many businesses run on one system with full data isolation. AI agents chat with customers 24/7 and staff can take over any conversation at any time.',
     image: '/images/chatpilot.png',
+    role: 'Backend & AI Engineer · Founder',
+    year: '2024 — Present',
+    status: 'Live',
+    problem:
+      'Service businesses were losing leads because customer messages went unanswered outside working hours. There was no single place to manage conversations, AI replies, and staff handover across many businesses at scale — and most tools could not isolate each business safely on shared infrastructure.',
+    architecture: [
+      'Multi-tenant NestJS backend (API server) with strict per-tenant data isolation and role-based access',
+      'Dedicated messaging server that connects to the WhatsApp / Meta Cloud API and handles inbound and outbound messages',
+      'Queue-based message processing (Redis + BullMQ) so the system stays fast and never drops messages under load',
+      'AI agent layer (OpenAI) that reads conversation context, answers, books, and follows up — with smooth handover to human staff',
+      'Real-time web dashboard for live chats, history, templates, bulk campaigns, and per-number AI on/off control',
+      'PostgreSQL for core relational data and Redis for caching, sessions, and queues',
+      'Dockerized services deployed on DigitalOcean behind Nginx, with GitHub Actions CI/CD and zero-downtime releases',
+      'Prometheus + Grafana monitoring with health checks and alerts so issues are caught early',
+    ],
     stack: [
       'NestJS',
+      'Node.js',
       'PostgreSQL',
+      'Redis',
+      'BullMQ',
       'TypeScript',
-      'WhatsApp Business API',
       'OpenAI',
+      'WhatsApp / Meta Cloud API',
       'Docker',
+      'Nginx',
       'DigitalOcean',
+      'GitHub Actions',
+      'Prometheus',
+      'Grafana',
     ],
-    features: [
-      'Multi-tenant SaaS with full data isolation',
-      'AI bots that reply 24/7 with smooth handover to staff',
-      'Live message handling and full chat history',
-      'Bulk campaigns and scheduled messages',
-      'Auto deploy with GitHub Actions on DigitalOcean',
+    results: [
+      'Handles 50,000+ messages per day in production',
+      'AI resolves around 80% of conversations on its own',
+      '60% more client replies for businesses on the platform',
+      'Serves multiple paying businesses on one isolated multi-tenant system',
+      'Zero-downtime deploys with automated CI/CD and live monitoring',
     ],
-    impact: '60% more client replies · thousands of messages a day',
     live: 'https://chat-pilot.dev',
     github: 'https://github.com/Arslanarsal',
-    status: 'Live',
+  },
+];
+
+export const services = [
+  {
+    icon: 'Server',
+    title: 'Backend APIs & Systems',
+    description:
+      'Scalable REST and GraphQL APIs, microservices, and multi-tenant SaaS backends with Node.js, NestJS, and Express. Clean, tested, and documented.',
+    items: ['REST / GraphQL APIs', 'Microservices', 'Auth & RBAC', 'Multi-tenant SaaS'],
+  },
+  {
+    icon: 'Database',
+    title: 'Databases & Performance',
+    description:
+      'Data modeling and tuning for PostgreSQL, MongoDB, and Redis. Caching, query optimization, and data pipelines that keep apps fast as they grow.',
+    items: ['Schema design', 'Query optimization', 'Redis caching', 'Data pipelines'],
+  },
+  {
+    icon: 'Container',
+    title: 'DevOps & Cloud',
+    description:
+      'Containerize with Docker, orchestrate with Kubernetes, and ship with CI/CD on DigitalOcean and AWS. Reliable, repeatable deploys with zero downtime.',
+    items: ['Docker & Kubernetes', 'CI/CD pipelines', 'Nginx & Linux', 'Cloud deployment'],
+  },
+  {
+    icon: 'Activity',
+    title: 'Monitoring & Reliability',
+    description:
+      'Observability with Prometheus and Grafana — dashboards, alerts, and health checks so problems get caught early and systems stay reliable.',
+    items: ['Prometheus & Grafana', 'Alerts & dashboards', 'Log management', 'Health checks'],
+  },
+  {
+    icon: 'Bot',
+    title: 'AI Agents & LLM Systems',
+    description:
+      'Production AI agents with OpenAI and Claude — chat, voice, and tool-calling agents with RAG, function calling, and custom MCP servers.',
+    items: ['Chat & voice agents', 'RAG & function calling', 'Custom MCP servers', 'Claude Code'],
+  },
+  {
+    icon: 'Workflow',
+    title: 'Automation & Integrations',
+    description:
+      'End-to-end automation with n8n and Make, plus third-party API integrations that connect your tools and remove manual work.',
+    items: ['n8n & Make workflows', 'Webhooks & jobs', 'Third-party APIs', 'CRM integrations'],
   },
 ];
 
 export const experience = [
   {
-    role: 'Full Stack Developer · AI Engineer',
+    role: 'Backend Engineer · AI & DevOps',
     company: 'Qodeon Lab',
     location: 'Gujrat, Pakistan',
     period: 'January 2025 — Present',
     description:
-      'Lead full-stack work on backend, AI agents, automation, and DevOps for clients in Pakistan, UAE, and Europe.',
+      'Lead backend, AI agent, and DevOps work for clients in Pakistan, the UAE, and Europe.',
     highlights: [
-      'Built REST APIs with Node.js, NestJS, and Express handling 50k+ requests per day',
-      'Built AI agents using OpenAI and Claude that cut manual client work by 50%',
-      'Set up Docker and Nginx on DigitalOcean with GitHub Actions for auto deploy',
+      'Built and shipped REST APIs with Node.js, NestJS, and Express in production',
+      'Containerized services with Docker and deployed on Kubernetes and DigitalOcean',
+      'Set up CI/CD with GitHub Actions for automated, zero-downtime deploys',
       'Built Grafana and Prometheus dashboards for live server health tracking',
-      'Made APIs 40% faster using Redis cache and database query optimisation',
-      'Built Meta API and ad funnel integrations for marketing automation',
+      'Made APIs 40% faster using Redis caching and database query optimization',
+      'Built AI agents with OpenAI and Claude that cut manual client work by 50%',
     ],
-    color: '#D97757',
+    color: '#06B6D4',
   },
   {
-    role: 'Founder · Lead Engineer',
+    role: 'Founder · Lead Backend Engineer',
     company: 'ChatPilot (Live SaaS)',
     location: 'Pakistan · UAE Clients',
     period: '2024 — Present',
     description:
-      'Built ChatPilot from zero — a multi-tenant WhatsApp CRM with AI bots used by clinics, agencies, and service businesses.',
+      'Built ChatPilot from zero — a multi-tenant AI CRM used by clinics, agencies, and service businesses.',
     highlights: [
       'Designed and shipped multi-tenant SaaS with full data isolation',
-      'AI bots replying 24/7 with smooth handover to human staff',
-      'Live message handling, chat history, and message threads',
-      'Bulk campaigns, scheduled messages, and template approval flow',
+      'Queue-based message processing built for high-volume messaging',
+      'AI agents replying 24/7 with smooth handover to human staff',
+      'Dockerized deployment with automated CI/CD on DigitalOcean',
       'In production with paying clients in Pakistan and the UAE',
     ],
-    color: '#10B981',
+    color: '#22D3EE',
   },
   {
-    role: 'Top-Rated Full Stack Freelancer',
+    role: 'Backend & Automation Freelancer',
     company: 'Upwork',
     location: 'Remote · Global Clients',
     period: '2023 — Present',
     description:
-      'Freelance Full Stack Developer on Upwork — WhatsApp Business setup, Meta Ads funnels, AI agents, n8n / Make automation, and full stack web work.',
+      'Freelance backend and automation engineer — APIs, AI agents, n8n / Make automation, and integrations for clients worldwide.',
     highlights: [
-      '5.0 stars from UAE client: "Great Full Stack Developer"',
-      'Delivered WhatsApp Business setup + automation + canned responses',
-      'Built Meta Ads funnels and Conversion API integrations',
+      'Top-rated freelancer with repeat clients in the UAE, Europe, and the US',
+      'Built backend services, AI agents, and automation pipelines end to end',
       'Voice and call agents with OpenAI Realtime and Claude',
-      'Repeat clients in UAE, Europe, and the US',
+      'Delivered third-party API and messaging integrations',
     ],
-    color: '#14A800',
+    color: '#0891B2',
   },
 ];
 
-export const upworkAchievement = {
-  title: 'WhatsApp Business Consultant (Setup + Automation + Canned Responses)',
-  period: 'Mar 25, 2026 — Apr 2, 2026',
-  hours: '22 hours',
-  rate: '$15.00 /hr',
-  earned: '$180.00 earned',
-  rating: 5.0,
-  clientReview: 'Great Full Stack Developer',
-  freelancerReview:
-    'Karim was an excellent client. The WhatsApp Business project was well-defined and communication was seamless. Very professional and easy to work with. Would happily work together again!',
-  client: {
-    rating: 5.0,
-    reviews: 87,
-    country: 'United Arab Emirates · Dubai',
-    spent: 'Over $90,000 total spent',
-    hires: '125 Hires · 9 Active',
-    member: 'Member since Sep 12, 2011',
-    type: 'Expert · willing to pay higher rates',
-  },
-  url: 'https://www.upwork.com/freelancers/~01731d026ab6d0a9b9',
-};
-
 export const achievements = [
-  {
-    title: '5.0 Upwork Rating',
-    subtitle: 'Top-Rated Freelancer',
-    description:
-      'Earned a 5.0-star review from a UAE client who called me a "Great Full Stack Developer".',
-    icon: 'Star',
-    metric: '5.0★',
-    color: 'from-emerald-500/20 to-green-500/20',
-  },
   {
     title: '700+ LeetCode',
     subtitle: 'Problem Solving',
@@ -223,43 +250,52 @@ export const achievements = [
       'Solved 700+ coding problems on LeetCode — arrays, graphs, trees, DP, and system design.',
     icon: 'Code2',
     metric: '700+',
-    color: 'from-green-500/20 to-emerald-500/20',
+    color: 'from-cyan-500/20 to-sky-500/20',
+  },
+  {
+    title: 'ICPC 2025 Regionalist',
+    subtitle: 'Competitive Programming',
+    description:
+      'Contestant in the ICPC Asia West Regional Programming Contest representing University of Gujrat.',
+    icon: 'Trophy',
+    metric: 'ICPC',
+    color: 'from-sky-500/20 to-blue-500/20',
   },
   {
     title: 'ChatPilot Live',
     subtitle: 'SaaS in Production',
     description:
-      'Founded and shipped ChatPilot — a live WhatsApp CRM SaaS used by paying clients today.',
+      'Founded and shipped ChatPilot — a live AI CRM used by paying clients in production.',
     icon: 'Rocket',
     metric: 'Live',
-    color: 'from-orange-500/20 to-red-500/20',
+    color: 'from-cyan-500/20 to-teal-500/20',
   },
   {
     title: '40% Faster APIs',
-    subtitle: 'Speed Boost',
+    subtitle: 'Performance',
     description:
-      'Made client APIs 40% faster using Redis cache and database query optimisation.',
+      'Made client APIs 40% faster using Redis cache and database query optimization.',
     icon: 'Zap',
     metric: '-40%',
-    color: 'from-purple-500/20 to-pink-500/20',
+    color: 'from-teal-500/20 to-emerald-500/20',
+  },
+  {
+    title: 'Won Programming Contests',
+    subtitle: 'IUPC · CODE.A.THON · TECHON',
+    description:
+      'Won and placed in multiple programming competitions, including IUPC 2024 (Winner) and CODE.A.THON (1st).',
+    icon: 'Award',
+    metric: 'Winner',
+    color: 'from-blue-500/20 to-indigo-500/20',
   },
   {
     title: 'AI Agent Systems',
-    subtitle: 'OpenAI · Claude · Claude Code',
+    subtitle: 'OpenAI · Claude · MCP',
     description:
       'Build real AI agents that plan steps, use tools, and recover from errors — chat, voice, and call agents.',
     icon: 'Brain',
     metric: 'AI Agents',
-    color: 'from-blue-500/20 to-cyan-500/20',
-  },
-  {
-    title: 'Meta API & Funnels',
-    subtitle: 'WhatsApp · Instagram · Ads',
-    description:
-      'Build Meta Cloud API, ad funnels, Conversion API, and Embedded Signup flows for marketing teams.',
-    icon: 'Target',
-    metric: 'Meta API',
-    color: 'from-indigo-500/20 to-purple-500/20',
+    color: 'from-indigo-500/20 to-cyan-500/20',
   },
 ];
 
@@ -269,77 +305,51 @@ export const aiCapabilities = [
     icon: 'Bot',
     title: 'Chat, Voice & Call Agents',
     description:
-      'I build AI agents that plan steps, use tools, remember things, and fix errors on their own — chat, voice, and full call agents that talk to customers in real time.',
+      'I build AI agents that plan steps, use tools, remember context, and fix errors on their own — chat, voice, and full call agents that talk to customers in real time.',
     items: [
-      'WhatsApp lead bots that talk to customers',
+      'Lead bots that talk to customers 24/7',
       'Voice and call agents with OpenAI Realtime',
-      'Content bots that turn one video into many posts',
-      'Office bots that read Slack and write reports',
+      'Tool-calling agents that take real actions',
+      'Agents that read Slack and write reports',
     ],
   },
   {
-    category: 'Meta API & WhatsApp',
-    icon: 'MessageCircle',
-    title: 'WhatsApp & Meta Cloud API Expert',
-    description:
-      'I connect WhatsApp Business and Instagram to your system using the official Meta Cloud API — template approval, business verification, and Embedded Signup all handled.',
-    items: [
-      'ChatPilot — a live WhatsApp CRM I built',
-      'Approved message templates for marketing',
-      'Embedded Signup for one-click client onboarding',
-      'Instagram Graph API for DM automation',
-    ],
-  },
-  {
-    category: 'Meta Ads & Funnels',
-    icon: 'TrendingUp',
-    title: 'Meta Ads Funnels & Tracking',
-    description:
-      'I build full Meta Ads funnels — Pixel, Conversion API, audience targeting, and dashboards that tell you exactly which ad turned into which paying customer.',
-    items: [
-      'Meta Pixel and Conversion API setup',
-      'Custom audience and lookalike funnels',
-      'Lead tracking from ad click to sale',
-      'Live dashboards for ROI and CAC',
-    ],
-  },
-  {
-    category: 'n8n & Make Workflows',
-    icon: 'Workflow',
-    title: 'Visual Automation with n8n & Make',
-    description:
-      'I make custom n8n and Make.com flows that connect AI agents to your business apps. Easy for non-tech people to use and edit later.',
-    items: [
-      'Custom n8n nodes for any API',
-      'AI nodes for OpenAI and Claude',
-      'Self hosted n8n on DigitalOcean with Docker',
-      'Make.com scenarios with branching logic',
-    ],
-  },
-  {
-    category: 'Claude Code Automation',
+    category: 'LLM Integration',
     icon: 'Sparkles',
-    title: 'Claude Code Agentic Systems',
+    title: 'OpenAI & Claude in Production',
     description:
-      'I build agentic systems with Claude Code — custom MCP servers, Slack and GitHub integrations, and AI workflows that ship real code and run real ops.',
+      'I integrate OpenAI and Claude into real backends — RAG over your data, function calling, and reliable prompt pipelines that run at scale, not just demos.',
+    items: [
+      'RAG over private data and docs',
+      'Function calling and structured outputs',
+      'Streaming responses and token control',
+      'Guardrails and fallback handling',
+    ],
+  },
+  {
+    category: 'MCP & Claude Code',
+    icon: 'Workflow',
+    title: 'Custom MCP Servers & Agentic Ops',
+    description:
+      'I build agentic systems with Claude Code — custom MCP servers, Slack and GitHub integrations, and AI workflows that ship real code and run real operations.',
     items: [
       'Custom MCP servers for client tools',
       'Claude Code agents for code review and ops',
-      'AI-driven CI/CD and deploy pipelines',
-      'Internal tools that read Slack and act',
+      'AI-driven CI/CD and deploy helpers',
+      'Internal tools that read context and act',
     ],
   },
   {
-    category: 'Real Use Cases',
-    icon: 'Target',
-    title: 'What I Have Built for Clients',
+    category: 'Automation',
+    icon: 'Network',
+    title: 'n8n & Make Workflows',
     description:
-      'Real systems for real businesses. These are not demos — they run in production today and earn money for clients.',
+      'I build custom n8n and Make.com flows that connect AI agents to your business apps — easy for non-tech people to use and edit later.',
     items: [
-      'WhatsApp lead bot for healthcare clinics',
-      'Auto pricing SaaS that updates Shopify daily',
-      'Meta Ads funnel for an e-commerce brand',
-      'Voice call agent for a sales team',
+      'Custom n8n nodes for any API',
+      'AI nodes for OpenAI and Claude',
+      'Self-hosted n8n on Docker',
+      'Make.com scenarios with branching logic',
     ],
   },
 ];

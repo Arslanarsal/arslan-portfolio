@@ -1,8 +1,9 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ArrowRight, Mail, Github, Linkedin, MapPin, Sparkles } from 'lucide-react';
+import { ArrowRight, Mail, Github, Linkedin, MapPin, Server } from 'lucide-react';
 import { profile } from '@/lib/data';
 
 export default function Hero() {
@@ -51,7 +52,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mt-4 text-xl md:text-2xl text-light/80 font-medium"
           >
-            Full Stack Developer · Meta API & Ads Funnels · AI Agents · Claude Code · DevOps
+            Backend Engineer · DevOps · AI Agents
           </motion.h2>
 
           <motion.p
@@ -60,10 +61,12 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="mt-6 text-base md:text-lg text-muted max-w-2xl leading-relaxed"
           >
-            I build full stack systems where backend APIs, AI agents, Meta API
-            integrations, ad funnels, n8n / Make automation, and DevOps come
-            together as one stack. 3+ years shipping real SaaS and client work
-            for businesses in Pakistan, UAE, Europe, and the US.
+            I design and ship scalable backend systems — REST APIs and
+            microservices with Node.js and NestJS, backed by PostgreSQL, MongoDB,
+            and Redis. I containerize with Docker, deploy on Kubernetes, run CI/CD
+            and monitoring, and build AI agents that run in production. 3+ years
+            shipping real systems for clients across Pakistan, the UAE, Europe,
+            and the US.
           </motion.p>
 
           <motion.div
@@ -73,15 +76,15 @@ export default function Hero() {
             className="mt-6 flex flex-wrap gap-2"
           >
             {[
-              'Full Stack',
-              'Meta API Expert',
-              'WhatsApp Business',
-              'Meta Ads Funnels',
+              'Node.js',
+              'NestJS',
+              'PostgreSQL',
+              'MongoDB',
+              'Docker',
+              'Kubernetes',
+              'CI/CD',
               'AI Agents',
-              'Claude Code',
-              'n8n / Make',
-              'Call Agents',
-              'DevOps',
+              'Monitoring',
             ].map((tag) => (
               <span
                 key={tag}
@@ -98,20 +101,20 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="mt-8 flex flex-wrap gap-3"
           >
-            <a
-              href="#projects"
+            <Link
+              href="/projects"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-accent text-white font-semibold hover:bg-accent-600 transition-all hover:gap-3 shadow-lg shadow-accent/20 hover:shadow-accent/40"
             >
               View Projects
               <ArrowRight size={18} />
-            </a>
-            <a
-              href="#contact"
+            </Link>
+            <Link
+              href="/contact"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-white/10 hover:border-white/20 bg-elevated/50 hover:bg-elevated text-light font-semibold transition-all"
             >
               <Mail size={18} />
               Hire Me
-            </a>
+            </Link>
           </motion.div>
 
           <motion.div
@@ -138,15 +141,6 @@ export default function Hero() {
               <Linkedin size={16} />
               LinkedIn
             </a>
-            <a
-              href={profile.upwork}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 hover:text-accent transition-colors"
-            >
-              <Sparkles size={16} />
-              Upwork (5.0★)
-            </a>
             <span className="inline-flex items-center gap-2">
               <MapPin size={16} />
               {profile.location}
@@ -165,15 +159,14 @@ export default function Hero() {
             <div className="absolute -inset-4 bg-gradient-to-br from-accent/40 via-accent/20 to-info/20 rounded-3xl blur-2xl opacity-60 animate-pulse-slow" />
             <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-3xl overflow-hidden glass-strong border border-white/10 shadow-2xl">
               <Image
-                src="/images/profile.jpg"
-                alt="M. Arslan — Full Stack Developer"
+                src="/images/profile-white.jpg"
+                alt="Muhammad Arslan — Backend Engineer"
                 fill
                 priority
                 sizes="(max-width: 768px) 288px, 384px"
                 className="object-cover"
-                style={{ objectPosition: '50% 70%' }}
+                style={{ objectPosition: '50% 38%' }}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
             </div>
 
             {/* Floating accent badge */}
@@ -182,10 +175,10 @@ export default function Hero() {
               transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
               className="absolute -bottom-4 -right-4 glass-strong border border-accent/30 px-4 py-3 rounded-2xl flex items-center gap-2 shadow-2xl"
             >
-              <Sparkles size={18} className="text-accent" />
+              <Server size={18} className="text-accent" />
               <div>
-                <div className="text-xs text-muted">Top-Rated on</div>
-                <div className="text-sm font-semibold">Upwork · 5.0★</div>
+                <div className="text-xs text-muted">ChatPilot</div>
+                <div className="text-sm font-semibold">Live SaaS · In Production</div>
               </div>
             </motion.div>
           </motion.div>

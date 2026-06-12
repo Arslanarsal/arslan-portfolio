@@ -7,7 +7,7 @@ import { profile } from '@/lib/data';
 const stats = [
   { label: 'Years of Experience', value: '3+', icon: Code2 },
   { label: 'LeetCode Problems', value: '700+', icon: Cpu },
-  { label: 'Upwork Rating', value: '5.0★', icon: Cloud },
+  { label: '2025 Regionalist', value: 'ICPC', icon: Cloud },
   { label: 'API Speed Boost', value: '40%', icon: Zap },
 ];
 
@@ -27,8 +27,8 @@ export default function About() {
         >
           <span className="text-sm font-mono text-accent">// 01 — About</span>
           <h2 className="mt-2 text-4xl md:text-5xl font-bold tracking-tight">
-            Full stack, <span className="text-gradient-orange">end to end</span> <br />
-            backend · AI · Meta API · DevOps
+            Backend systems, <span className="text-gradient-orange">built to last</span> <br />
+            APIs · DevOps · AI agents
           </h2>
         </motion.div>
 
@@ -42,18 +42,17 @@ export default function About() {
           >
             <p>{profile.about}</p>
             <p>
-              I work like a one-person team — backend, frontend, AI, database,
-              Meta API, ad funnels, automation, and deploy all done by me. No
-              handoffs, no &quot;that&apos;s not my job&quot; when something breaks.
-              My live SaaS is <span className="text-light">ChatPilot</span>, a
-              WhatsApp CRM with AI bots used by clinics and agencies today.
+              I own systems end to end — API design, databases, containers,
+              deployment, and monitoring. No handoffs, no &quot;that&apos;s not my
+              job&quot; when something breaks. My live SaaS is{' '}
+              <span className="text-light">ChatPilot</span>, a multi-tenant AI CRM
+              used by paying clients in production.
             </p>
             <p>
-              On <span className="text-light">Upwork</span> I am a top-rated
-              freelancer with a 5.0 rating — clients call me a &quot;Great Full
-              Stack Developer&quot;. When I am not shipping client work, I am
-              solving algorithm problems — 700+ LeetCode done and joined ICPC
-              2025 Regional.
+              I come from a strong competitive programming background — 700+
+              LeetCode problems and ICPC 2025 Regional — so problem solving,
+              edge cases, and performance are second nature. I care about clean,
+              observable systems that stay fast and reliable as they scale.
             </p>
           </motion.div>
 

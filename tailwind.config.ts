@@ -8,19 +8,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: '#0A0E1A',
-        surface: '#11151F',
-        elevated: '#171C28',
-        border: '#1F2738',
-        muted: '#7A85A8',
-        light: '#E8EAF6',
+        background: '#0C1222',
+        surface: '#131B2E',
+        elevated: '#1A2440',
+        border: '#243049',
+        muted: '#8593AD',
+        light: '#E2E8F0',
         accent: {
-          DEFAULT: '#D97757',
-          50: '#FDF2EC',
-          100: '#FAE0D2',
-          400: '#E2906F',
-          500: '#D97757',
-          600: '#C45D3F',
+          DEFAULT: '#06B6D4',
+          50: '#ECFEFF',
+          100: '#CFFAFE',
+          400: '#22D3EE',
+          500: '#06B6D4',
+          600: '#0891B2',
         },
         success: '#4ADE80',
         info: '#60A5FA',
@@ -46,8 +46,8 @@ const config: Config = {
           '50%': { transform: 'translateY(-10px)' },
         },
         glow: {
-          '0%': { 'box-shadow': '0 0 20px rgba(217, 119, 87, 0.3)' },
-          '100%': { 'box-shadow': '0 0 40px rgba(217, 119, 87, 0.6)' },
+          '0%': { 'box-shadow': '0 0 20px rgba(6, 182, 212, 0.3)' },
+          '100%': { 'box-shadow': '0 0 40px rgba(6, 182, 212, 0.6)' },
         },
         'fade-up': {
           '0%': { opacity: '0', transform: 'translateY(20px)' },
