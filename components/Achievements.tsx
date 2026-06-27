@@ -26,7 +26,7 @@ export default function Achievements() {
           transition={{ duration: 0.5 }}
           className="max-w-2xl"
         >
-          <span className="text-sm font-mono text-accent">// 06 — Achievements</span>
+          <span className="text-sm font-mono text-accent">// Achievements</span>
           <h2 className="mt-2 text-4xl md:text-5xl font-bold tracking-tight">
             Wins worth <br />
             <span className="text-gradient-orange">talking about</span>

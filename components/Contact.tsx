@@ -49,7 +49,7 @@ export default function Contact() {
           transition={{ duration: 0.5 }}
           className="text-center max-w-2xl mx-auto"
         >
-          <span className="text-sm font-mono text-accent">// 07 — Contact</span>
+          <span className="text-sm font-mono text-accent">// Contact</span>
           <h2 className="mt-2 text-4xl md:text-6xl font-bold tracking-tight leading-[1.05]">
             Let&apos;s build <br />
             <span className="text-gradient-orange">something serious.</span>

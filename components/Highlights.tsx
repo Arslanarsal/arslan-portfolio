@@ -53,12 +53,12 @@ export default function Highlights() {
         >
           <div className="max-w-2xl">
             <h2 className="text-2xl md:text-3xl font-bold tracking-tight">
-              Backend systems that are{' '}
+              Full products that are{' '}
               <span className="text-gradient-orange">fast, observable, and built to last</span>
             </h2>
             <p className="mt-3 text-light/70">
-              From API design and databases to Docker, Kubernetes, CI/CD, and AI
-              agents — I build and run the whole thing.
+              From React and Next.js frontends to APIs, databases, Docker,
+              Kubernetes, CI/CD, and AI agents — I build and run the whole thing.
             </p>
           </div>
           <div className="flex flex-wrap gap-3">

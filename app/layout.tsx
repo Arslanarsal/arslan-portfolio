@@ -17,10 +17,13 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Muhammad Arslan — Backend Engineer · DevOps & AI Agents',
+  title: 'Muhammad Arslan — Full Stack Developer · Backend, DevOps & AI',
   description:
-    'Backend Engineer specializing in Node.js, NestJS, PostgreSQL, Docker, Kubernetes, CI/CD, and AI agents. Building scalable APIs, reliable cloud infrastructure, and production AI systems.',
+    'Full Stack Developer specializing in React, Next.js, Node.js, NestJS, PostgreSQL, Docker, Kubernetes, CI/CD, and AI agents. Building modern web apps, scalable APIs, and production AI systems.',
   keywords: [
+    'Full Stack Developer',
+    'React',
+    'Next.js',
     'Backend Engineer',
     'DevOps Engineer',
     'Node.js',
@@ -40,17 +43,17 @@ export const metadata: Metadata = {
   authors: [{ name: 'Muhammad Arslan' }],
   creator: 'Muhammad Arslan',
   openGraph: {
-    title: 'Muhammad Arslan — Backend Engineer · DevOps & AI Agents',
+    title: 'Muhammad Arslan — Full Stack Developer · Backend, DevOps & AI',
     description:
-      'Scalable backend systems, DevOps, and production AI agents. Node.js · NestJS · Docker · Kubernetes · CI/CD.',
+      'Modern web apps, scalable backends, DevOps, and AI agents. React · Next.js · Node.js · NestJS · Docker · Kubernetes.',
     type: 'website',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Muhammad Arslan — Backend Engineer',
+    title: 'Muhammad Arslan — Full Stack Developer',
     description:
-      'Scalable backend systems, DevOps, and production AI agents.',
+      'Modern web apps, scalable backends, DevOps, and AI agents.',
   },
   robots: {
     index: true,

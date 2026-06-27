@@ -25,10 +25,10 @@ export default function About() {
           transition={{ duration: 0.5 }}
           className="max-w-2xl"
         >
-          <span className="text-sm font-mono text-accent">// 01 — About</span>
+          <span className="text-sm font-mono text-accent">// About</span>
           <h2 className="mt-2 text-4xl md:text-5xl font-bold tracking-tight">
-            Backend systems, <span className="text-gradient-orange">built to last</span> <br />
-            APIs · DevOps · AI agents
+            Full products, <span className="text-gradient-orange">built to last</span> <br />
+            frontend · backend · DevOps · AI
           </h2>
         </motion.div>
 

@@ -9,10 +9,12 @@ import {
   Activity,
   Workflow,
   Code2,
+  Layout,
 } from 'lucide-react';
 import { skills } from '@/lib/data';
 
 const categoryIcons: Record<string, any> = {
+  Frontend: Layout,
   'Backend & APIs': Server,
   Databases: Database,
   'DevOps & Cloud': Cloud,
@@ -35,7 +37,7 @@ export default function Skills() {
           transition={{ duration: 0.5 }}
           className="max-w-2xl"
         >
-          <span className="text-sm font-mono text-accent">// 02 — Skills</span>
+          <span className="text-sm font-mono text-accent">// Skills</span>
           <h2 className="mt-2 text-4xl md:text-5xl font-bold tracking-tight">
             The toolkit I use to <br />
             <span className="text-gradient-orange">ship real systems</span>

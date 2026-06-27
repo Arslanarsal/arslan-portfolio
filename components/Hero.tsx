@@ -52,7 +52,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mt-4 text-xl md:text-2xl text-light/80 font-medium"
           >
-            Backend Engineer · DevOps · AI Agents
+            Full Stack Developer · Backend · DevOps · AI
           </motion.h2>
 
           <motion.p
@@ -61,12 +61,12 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="mt-6 text-base md:text-lg text-muted max-w-2xl leading-relaxed"
           >
-            I design and ship scalable backend systems — REST APIs and
-            microservices with Node.js and NestJS, backed by PostgreSQL, MongoDB,
-            and Redis. I containerize with Docker, deploy on Kubernetes, run CI/CD
-            and monitoring, and build AI agents that run in production. 3+ years
-            shipping real systems for clients across Pakistan, the UAE, Europe,
-            and the US.
+            I build full products end to end — modern web apps with React and
+            Next.js, scalable APIs with Node.js and NestJS, backed by PostgreSQL,
+            MongoDB, and Redis. I containerize with Docker, deploy on Kubernetes,
+            run CI/CD and monitoring, and build AI agents that run in production.
+            3+ years shipping real systems for clients across Pakistan, the UAE,
+            Europe, and the US.
           </motion.p>
 
           <motion.div
@@ -76,15 +76,15 @@ export default function Hero() {
             className="mt-6 flex flex-wrap gap-2"
           >
             {[
+              'React',
+              'Next.js',
               'Node.js',
               'NestJS',
               'PostgreSQL',
               'MongoDB',
               'Docker',
               'Kubernetes',
-              'CI/CD',
               'AI Agents',
-              'Monitoring',
             ].map((tag) => (
               <span
                 key={tag}

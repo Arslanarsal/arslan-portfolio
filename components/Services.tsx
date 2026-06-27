@@ -9,6 +9,7 @@ import {
   Activity,
   Bot,
   Workflow,
+  Layout,
   CheckCircle2,
   ArrowRight,
 } from 'lucide-react';
@@ -21,6 +22,7 @@ const iconMap: Record<string, any> = {
   Activity,
   Bot,
   Workflow,
+  Layout,
 };
 
 export default function Services() {

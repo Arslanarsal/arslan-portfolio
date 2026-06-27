@@ -15,7 +15,7 @@ export default function Experience() {
           transition={{ duration: 0.5 }}
           className="max-w-2xl"
         >
-          <span className="text-sm font-mono text-accent">// 05 — Journey</span>
+          <span className="text-sm font-mono text-accent">// Journey</span>
           <h2 className="mt-2 text-4xl md:text-5xl font-bold tracking-tight">
             Experience & <br />
             <span className="text-gradient-orange">education</span>

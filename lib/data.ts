@@ -3,9 +3,9 @@
 export const profile = {
   name: 'M. Arslan',
   fullName: 'Muhammad Arslan',
-  title: 'Backend Engineer · DevOps & AI Agents',
+  title: 'Full Stack Developer · Backend, DevOps & AI',
   tagline:
-    'Backend engineer building scalable APIs, AI agent systems, and reliable cloud infrastructure with Node.js, NestJS, Docker, and Kubernetes.',
+    'Full stack developer building modern web apps with React and Next.js, scalable APIs with Node.js and NestJS, AI agent systems, and reliable cloud infrastructure with Docker and Kubernetes.',
   location: 'Gujrat, Punjab, Pakistan',
   email: 'arslanarsal455@gmail.com',
   phone: '+92 342 3407767',
@@ -14,10 +14,20 @@ export const profile = {
   upwork: 'https://www.upwork.com/freelancers/~01731d026ab6d0a9b9',
   website: 'https://chat-pilot.dev',
   yearsExperience: 3,
-  about: `I am a Backend Engineer with 3+ years of hands-on experience building production systems for real clients. I design and ship scalable REST APIs and microservices with Node.js, NestJS, and Express, backed by PostgreSQL, MongoDB, and Redis. On the infrastructure side I containerize services with Docker, deploy on Kubernetes and DigitalOcean, run CI/CD pipelines, and set up monitoring with Prometheus and Grafana so systems stay reliable under real load. I also build AI agent systems with OpenAI and Claude — chat, voice, and tool-calling agents that run in production. My focus is clean, maintainable code and systems that are fast, observable, and built to last.`,
+  about: `I am a Full Stack Developer with 3+ years of hands-on experience building production systems end to end for real clients. On the frontend I build modern, responsive web apps with React, Next.js, TypeScript, and Tailwind CSS. On the backend I design and ship scalable REST APIs and microservices with Node.js, NestJS, and Express, backed by PostgreSQL, MongoDB, and Redis. I also handle the infrastructure — containerizing with Docker, deploying on Kubernetes and DigitalOcean, running CI/CD pipelines, and setting up monitoring with Prometheus and Grafana so systems stay reliable under real load. On top of that I build AI agent systems with OpenAI and Claude. My focus is clean, maintainable code and full products that are fast, observable, and built to last.`,
 };
 
 export const skills = {
+  'Frontend': [
+    'React',
+    'Next.js',
+    'TypeScript',
+    'JavaScript',
+    'Tailwind CSS',
+    'Responsive UI',
+    'REST / HTTP',
+    'Framer Motion',
+  ],
   'Backend & APIs': [
     'Node.js',
     'NestJS',
@@ -148,6 +158,13 @@ export const projects = [
 
 export const services = [
   {
+    icon: 'Layout',
+    title: 'Frontend & Web Apps',
+    description:
+      'Modern, responsive web apps and dashboards with React, Next.js, TypeScript, and Tailwind CSS — fast, clean, and built to convert.',
+    items: ['React & Next.js', 'Responsive UI', 'Dashboards', 'Tailwind CSS'],
+  },
+  {
     icon: 'Server',
     title: 'Backend APIs & Systems',
     description:
@@ -193,13 +210,14 @@ export const services = [
 
 export const experience = [
   {
-    role: 'Backend Engineer · AI & DevOps',
+    role: 'Full Stack Developer · AI & DevOps',
     company: 'Qodeon Lab',
     location: 'Gujrat, Pakistan',
     period: 'January 2025 — Present',
     description:
-      'Lead backend, AI agent, and DevOps work for clients in Pakistan, the UAE, and Europe.',
+      'Lead full stack, AI agent, and DevOps work for clients in Pakistan, the UAE, and Europe.',
     highlights: [
+      'Built modern web apps with React, Next.js, and Tailwind on the frontend',
       'Built and shipped REST APIs with Node.js, NestJS, and Express in production',
       'Containerized services with Docker and deployed on Kubernetes and DigitalOcean',
       'Set up CI/CD with GitHub Actions for automated, zero-downtime deploys',

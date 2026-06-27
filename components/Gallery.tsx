@@ -86,7 +86,7 @@ export default function Gallery() {
           transition={{ duration: 0.5 }}
           className="max-w-2xl"
         >
-          <span className="text-sm font-mono text-accent">// 08 — In Action</span>
+          <span className="text-sm font-mono text-accent">// In Action</span>
           <h2 className="mt-2 text-4xl md:text-5xl font-bold tracking-tight">
             Events, contests, <br />
             <span className="text-gradient-orange">and team work</span>
