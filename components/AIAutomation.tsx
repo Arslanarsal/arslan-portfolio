@@ -149,7 +149,7 @@ export default function AIAutomation() {
                 Stack &amp; Tooling
               </h3>
               <p className="text-sm text-muted mt-1">
-                The backend, DevOps, and AI tools I run in production
+                The AI, automation, and engineering tools I run in production
               </p>
             </div>
             <span className="text-xs font-mono text-accent">

@@ -14,7 +14,7 @@ export default function Footer() {
           <div>
             <div className="font-semibold text-light">M. Arslan</div>
             <div className="text-xs text-muted">
-              Full Stack Developer · DevOps & AI · Pakistan
+              AI Automation & Integration Specialist · Full Stack Developer
             </div>
           </div>
         </div>

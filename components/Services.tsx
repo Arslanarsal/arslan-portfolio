@@ -10,6 +10,8 @@ import {
   Bot,
   Workflow,
   Layout,
+  Sparkles,
+  Network,
   CheckCircle2,
   ArrowRight,
 } from 'lucide-react';
@@ -23,6 +25,8 @@ const iconMap: Record<string, any> = {
   Bot,
   Workflow,
   Layout,
+  Sparkles,
+  Network,
 };
 
 export default function Services() {

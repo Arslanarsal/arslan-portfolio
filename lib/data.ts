@@ -3,32 +3,72 @@
 export const profile = {
   name: 'M. Arslan',
   fullName: 'Muhammad Arslan',
-  title: 'Full Stack Developer · Backend, DevOps & AI',
+  title: 'AI Automation & Integration Specialist · Full Stack Developer',
   tagline:
-    'Full stack developer building modern web apps with React and Next.js, scalable APIs with Node.js and NestJS, AI agent systems, and reliable cloud infrastructure with Docker and Kubernetes.',
+    'I build AI automation and integration systems that run in production — AI agents and chatbots on OpenAI and Claude, RAG over your own data, and n8n, Make, and Zapier workflows — backed by full stack engineering in Node.js, NestJS, Python, React, and Next.js.',
   location: 'Gujrat, Punjab, Pakistan',
   email: 'arslanarsal455@gmail.com',
   phone: '+92 342 3407767',
   linkedin: 'https://linkedin.com/in/m-arslan-aa21a0246',
   github: 'https://github.com/Arslanarsal',
-  upwork: 'https://www.upwork.com/freelancers/~01731d026ab6d0a9b9',
+  upwork: 'https://www.upwork.com/freelancers/arslan009',
   website: 'https://chat-pilot.dev',
   yearsExperience: 3,
-  about: `I am a Full Stack Developer with 3+ years of hands-on experience building production systems end to end for real clients. On the frontend I build modern, responsive web apps with React, Next.js, TypeScript, and Tailwind CSS. On the backend I design and ship scalable REST APIs and microservices with Node.js, NestJS, and Express, backed by PostgreSQL, MongoDB, and Redis. I also handle the infrastructure — containerizing with Docker, deploying on Kubernetes and DigitalOcean, running CI/CD pipelines, and setting up monitoring with Prometheus and Grafana so systems stay reliable under real load. On top of that I build AI agent systems with OpenAI and Claude. My focus is clean, maintainable code and full products that are fast, observable, and built to last.`,
+  about: `I am an AI Automation & Integration Specialist and Full Stack Developer with 3+ years of hands-on experience shipping systems that businesses actually run in production, not demos.
+
+Most of my work is AI and automation. I build AI agents and chatbots on the OpenAI, Anthropic Claude, and Google Gemini APIs using tool and function calling, conversation memory, and human handover, so the AI takes real actions and knows when to pass a conversation to a person. I design RAG systems over a company's own documents with vector databases, so answers stay grounded in real data and can be traced back to a source. I build automation workflows in n8n, Make, and Zapier, custom API and webhook integrations, and full GoHighLevel and CRM setups covering lead capture, routing, follow-up, and appointment booking.
+
+What separates me from a typical automation operator is that I am also a full stack developer, so when something isn't possible with a native connector, I build it. I write services and REST APIs in Node.js, NestJS, Express, TypeScript, and Python with FastAPI, design PostgreSQL and MongoDB schemas, use Redis and queues for background work, and build the interfaces and admin dashboards in React and Next.js. I ship with Docker, CI/CD, and monitoring on AWS and DigitalOcean.
+
+I build automation the way software should be built — with retries, rate limit handling, idempotency, error logging, and alerts — so leads, orders, and tasks never silently disappear. I hold a 100% Job Success Score and a 5.0 client rating on Upwork.`,
 };
 
 export const skills = {
-  'Frontend': [
-    'React',
-    'Next.js',
-    'TypeScript',
-    'JavaScript',
-    'Tailwind CSS',
-    'Responsive UI',
-    'REST / HTTP',
-    'Framer Motion',
+  'AI & LLM': [
+    'OpenAI API',
+    'Anthropic Claude',
+    'Google Gemini',
+    'Claude Code',
+    'AI Agents',
+    'Chatbots',
+    'Voice & Call Agents',
+    'Function / Tool Calling',
+    'Agentic Workflows',
+    'Prompt Engineering',
+    'Conversation Memory',
+    'Human-in-the-Loop',
+  ],
+  'RAG & Vector Search': [
+    'RAG Architectures',
+    'Embeddings',
+    'Pinecone',
+    'pgvector',
+    'Chroma',
+    'LangChain',
+    'LangGraph',
+    'LlamaIndex',
+    'Chunking Strategies',
+    'Semantic Search',
+    'Reranking',
+    'Custom MCP Servers',
+  ],
+  'Automation & Integrations': [
+    'n8n',
+    'Make.com',
+    'Zapier',
+    'Power Automate',
+    'GoHighLevel',
+    'Webhooks',
+    'REST API Integration',
+    'OAuth 2.0',
+    'Scheduled Jobs',
+    'WhatsApp / Meta Cloud API',
+    'Twilio',
+    'Playwright Scraping',
   ],
   'Backend & APIs': [
+    'Python',
+    'FastAPI',
     'Node.js',
     'NestJS',
     'Express.js',
@@ -38,8 +78,17 @@ export const skills = {
     'WebSockets',
     'Microservices',
     'JWT Auth',
-    'OAuth 2.0',
     'RBAC',
+  ],
+  'Frontend': [
+    'React',
+    'Next.js',
+    'TypeScript',
+    'JavaScript',
+    'Tailwind CSS',
+    'Responsive UI',
+    'REST / HTTP',
+    'Framer Motion',
   ],
   'Databases': [
     'PostgreSQL',
@@ -73,35 +122,15 @@ export const skills = {
     'Unit Testing',
     'Code Review',
   ],
-  'AI & Agents': [
-    'OpenAI API',
-    'Anthropic Claude',
-    'Claude Code',
-    'AI Agents',
-    'Voice & Call Agents',
-    'LLM Integration',
-    'RAG',
-    'Function Calling',
-    'Custom MCP Servers',
-  ],
-  'Automation & Integrations': [
-    'n8n',
-    'Make.com',
-    'Webhooks',
-    'Scheduled Jobs',
-    'Workflow Automation',
-    'Third-party APIs',
-    'WhatsApp / Meta Cloud API',
-  ],
   'Languages & CP': [
-    'C++',
-    'JavaScript',
     'Python',
+    'TypeScript',
+    'JavaScript',
+    'C++',
     'SQL',
     'Data Structures',
     'Algorithms',
     'Dynamic Programming',
-    'Graphs',
   ],
 };
 
@@ -158,6 +187,34 @@ export const projects = [
 
 export const services = [
   {
+    icon: 'Bot',
+    title: 'AI Agents & Chatbots',
+    description:
+      'Production AI agents on OpenAI, Claude, and Gemini that hold real conversations, take actions through tool calling, qualify leads, book appointments, and hand over to a human when unsure.',
+    items: ['Chat & voice agents', 'Tool / function calling', 'Human handover', 'Conversation memory'],
+  },
+  {
+    icon: 'Workflow',
+    title: 'AI Automation & Workflows',
+    description:
+      'End-to-end automation in n8n, Make, and Zapier, plus custom API and webhook integrations that connect your tools and remove hours of manual work every week.',
+    items: ['n8n, Make & Zapier', 'Webhooks & scheduled jobs', 'Custom API integrations', 'Self-hosted n8n'],
+  },
+  {
+    icon: 'Sparkles',
+    title: 'RAG & Knowledge Assistants',
+    description:
+      'Assistants that answer strictly from your own documents and data — ingestion, chunking, embeddings, and semantic retrieval with sources cited, so nothing is invented.',
+    items: ['RAG architectures', 'Vector databases', 'Document extraction', 'Cited answers'],
+  },
+  {
+    icon: 'Network',
+    title: 'CRM & Lead Automation',
+    description:
+      'GoHighLevel and CRM builds covering lead capture and routing, follow-up sequences, pipelines, and appointment booking — connected to everything else through the API.',
+    items: ['GoHighLevel setups', 'Lead routing & follow-up', 'Appointment booking', 'Pipelines & reporting'],
+  },
+  {
     icon: 'Layout',
     title: 'Frontend & Web Apps',
     description:
@@ -168,8 +225,8 @@ export const services = [
     icon: 'Server',
     title: 'Backend APIs & Systems',
     description:
-      'Scalable REST and GraphQL APIs, microservices, and multi-tenant SaaS backends with Node.js, NestJS, and Express. Clean, tested, and documented.',
-    items: ['REST / GraphQL APIs', 'Microservices', 'Auth & RBAC', 'Multi-tenant SaaS'],
+      'Scalable REST and GraphQL APIs, microservices, and multi-tenant SaaS backends with Node.js, NestJS, Express, and Python with FastAPI. Clean, tested, and documented.',
+    items: ['Node.js & NestJS', 'Python & FastAPI', 'Auth & RBAC', 'Multi-tenant SaaS'],
   },
   {
     icon: 'Database',
@@ -192,38 +249,25 @@ export const services = [
       'Observability with Prometheus and Grafana — dashboards, alerts, and health checks so problems get caught early and systems stay reliable.',
     items: ['Prometheus & Grafana', 'Alerts & dashboards', 'Log management', 'Health checks'],
   },
-  {
-    icon: 'Bot',
-    title: 'AI Agents & LLM Systems',
-    description:
-      'Production AI agents with OpenAI and Claude — chat, voice, and tool-calling agents with RAG, function calling, and custom MCP servers.',
-    items: ['Chat & voice agents', 'RAG & function calling', 'Custom MCP servers', 'Claude Code'],
-  },
-  {
-    icon: 'Workflow',
-    title: 'Automation & Integrations',
-    description:
-      'End-to-end automation with n8n and Make, plus third-party API integrations that connect your tools and remove manual work.',
-    items: ['n8n & Make workflows', 'Webhooks & jobs', 'Third-party APIs', 'CRM integrations'],
-  },
 ];
 
 export const experience = [
   {
-    role: 'Full Stack Developer · AI & DevOps',
+    role: 'AI Automation Engineer · Full Stack Developer',
     company: 'Qodeon Lab',
-    location: 'Gujrat, Pakistan',
+    location: 'Remote · Global Clients',
     period: 'January 2025 — Present',
     description:
-      'Lead full stack, AI agent, and DevOps work for clients in Pakistan, the UAE, and Europe.',
+      'Lead AI automation, agent, and full stack work for clients across the US, UK, Europe, and the UAE.',
     highlights: [
-      'Built modern web apps with React, Next.js, and Tailwind on the frontend',
-      'Built and shipped REST APIs with Node.js, NestJS, and Express in production',
-      'Containerized services with Docker and deployed on Kubernetes and DigitalOcean',
-      'Set up CI/CD with GitHub Actions for automated, zero-downtime deploys',
-      'Built Grafana and Prometheus dashboards for live server health tracking',
+      'Built AI agents with OpenAI, Claude, and Gemini that cut manual client work by 50%',
+      'Designed RAG systems over client documents so answers stay grounded and traceable',
+      'Built n8n and Make workflows connecting CRMs, calendars, email, and reporting tools',
+      'Built custom MCP servers so assistants query real business data through defined tools',
+      'Shipped REST APIs and services with Node.js, NestJS, Express, and Python (FastAPI)',
+      'Built React and Next.js dashboards and admin tools on top of the AI layer',
       'Made APIs 40% faster using Redis caching and database query optimization',
-      'Built AI agents with OpenAI and Claude that cut manual client work by 50%',
+      'Owned DevOps with Docker, CI/CD, and monitoring for zero-downtime releases',
     ],
     color: '#06B6D4',
   },
@@ -244,17 +288,19 @@ export const experience = [
     color: '#22D3EE',
   },
   {
-    role: 'Backend & Automation Freelancer',
+    role: 'AI Automation & Integration Freelancer',
     company: 'Upwork',
     location: 'Remote · Global Clients',
     period: '2023 — Present',
     description:
-      'Freelance backend and automation engineer — APIs, AI agents, n8n / Make automation, and integrations for clients worldwide.',
+      'Freelance AI automation and integration engineer — AI agents, RAG assistants, n8n / Make / Zapier automation, GoHighLevel builds, and custom API integrations for clients worldwide.',
     highlights: [
-      'Top-rated freelancer with repeat clients in the UAE, Europe, and the US',
-      'Built backend services, AI agents, and automation pipelines end to end',
+      '100% Job Success Score and 5.0 average client rating with repeat clients',
+      'Built AI agents, chatbots, and RAG assistants that answer from client data',
+      'Built automation pipelines in n8n, Make, and Zapier with retries and alerting',
+      'Delivered GoHighLevel and CRM builds: lead routing, follow-up, and booking',
+      'Built Telegram, WhatsApp, and Meta Cloud API bots and integrations',
       'Voice and call agents with OpenAI Realtime and Claude',
-      'Delivered third-party API and messaging integrations',
     ],
     color: '#0891B2',
   },

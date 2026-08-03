@@ -28,7 +28,7 @@ export default function About() {
           <span className="text-sm font-mono text-accent">// About</span>
           <h2 className="mt-2 text-4xl md:text-5xl font-bold tracking-tight">
             Full products, <span className="text-gradient-orange">built to last</span> <br />
-            frontend · backend · DevOps · AI
+            AI automation · integrations · full stack
           </h2>
         </motion.div>
 
