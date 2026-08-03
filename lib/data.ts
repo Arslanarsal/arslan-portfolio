@@ -6,7 +6,7 @@ export const profile = {
   title: 'AI Automation & Integration Specialist · Full Stack Developer',
   tagline:
     'I build AI automation and integration systems that run in production — AI agents and chatbots on OpenAI and Claude, RAG over your own data, and n8n, Make, and Zapier workflows — backed by full stack engineering in Node.js, NestJS, Python, React, and Next.js.',
-  location: 'Gujrat, Punjab, Pakistan',
+  location: 'Remote · Clients worldwide',
   email: 'arslanarsal455@gmail.com',
   phone: '+92 342 3407767',
   linkedin: 'https://linkedin.com/in/m-arslan-aa21a0246',
@@ -274,7 +274,7 @@ export const experience = [
   {
     role: 'Founder · Lead Backend Engineer',
     company: 'ChatPilot (Live SaaS)',
-    location: 'Pakistan · UAE Clients',
+    location: 'Remote · US, UK, Europe & UAE Clients',
     period: '2024 — Present',
     description:
       'Built ChatPilot from zero — a multi-tenant AI CRM used by clinics, agencies, and service businesses.',
@@ -283,7 +283,7 @@ export const experience = [
       'Queue-based message processing built for high-volume messaging',
       'AI agents replying 24/7 with smooth handover to human staff',
       'Dockerized deployment with automated CI/CD on DigitalOcean',
-      'In production with paying clients in Pakistan and the UAE',
+      'In production with paying clients across the UAE and beyond',
     ],
     color: '#22D3EE',
   },
