@@ -3,9 +3,9 @@
 export const profile = {
   name: 'M. Arslan',
   fullName: 'Muhammad Arslan',
-  title: 'AI Automation & Integration Specialist · Full Stack Developer',
+  title: 'Full Stack AI Engineer · AI Automation Specialist',
   tagline:
-    'I build AI automation and integration systems that run in production — AI agents and chatbots on OpenAI and Claude, RAG over your own data, and n8n, Make, and Zapier workflows — backed by full stack engineering in Node.js, NestJS, Python, React, and Next.js.',
+    'I build AI systems that run in production — AI agents on Claude and OpenAI, RAG over your own data, and automation in n8n, Make, and Zapier — backed by full stack engineering in Node.js, NestJS, Python, React, and Next.js.',
   location: 'Remote · Clients worldwide',
   email: 'arslanarsal455@gmail.com',
   phone: '+92 342 3407767',
@@ -14,7 +14,7 @@ export const profile = {
   upwork: 'https://www.upwork.com/freelancers/arslan009',
   website: 'https://chat-pilot.dev',
   yearsExperience: 3,
-  about: `I am an AI Automation & Integration Specialist and Full Stack Developer with 3+ years of hands-on experience shipping systems that businesses actually run in production, not demos.
+  about: `I am a Full Stack AI Engineer and AI Automation Specialist with 3+ years of hands-on experience shipping systems that businesses actually run in production, not demos.
 
 Most of my work is AI and automation. I build AI agents and chatbots on the OpenAI, Anthropic Claude, and Google Gemini APIs using tool and function calling, conversation memory, and human handover, so the AI takes real actions and knows when to pass a conversation to a person. I design RAG systems over a company's own documents with vector databases, so answers stay grounded in real data and can be traced back to a source. I build automation workflows in n8n, Make, and Zapier, custom API and webhook integrations, and full GoHighLevel and CRM setups covering lead capture, routing, follow-up, and appointment booking.
 
@@ -181,7 +181,84 @@ export const projects = [
       'Zero-downtime deploys with automated CI/CD and live monitoring',
     ],
     live: 'https://chat-pilot.dev',
-    github: 'https://github.com/Arslanarsal',
+    github: 'https://github.com/Arslanarsal/ChatPilot',
+  },
+  {
+    slug: 'hivemind',
+    name: 'HIVEMIND',
+    tagline: 'Multi-Agent Trading Committee with On-Chain Decisions',
+    description:
+      'Most trading bots are a single model making every call alone. HIVEMIND replaces that with a committee of four specialised AI agents that debate a trade, vote, and hold when they cannot agree. Every decision, including every disagreement, is signed and recorded on-chain so it can be verified by anyone.',
+    image: '/images/hivemind.png',
+    role: 'Architect & Engineer',
+    year: '2026',
+    status: 'Live',
+    problem:
+      'A single model making autonomous trading decisions has no second opinion and no accountability. One bad read of the market moves real capital, and there is no verifiable record of why the decision was made or whether the reasoning was changed after the fact.',
+    architecture: [
+      'Four specialised agents with separate roles: market strategist, news and macro analyst, technical signal scorer, and a rules based safety engine',
+      'Consensus layer that collects each vote and requires agreement before any action, defaulting to hold when the committee is split',
+      'Safety engine with hard rules that can veto a trade regardless of consensus, for example when spreads are too wide',
+      'Every decision, vote and disagreement signed and written on-chain (ERC-8004) so the reasoning is public and cannot be rewritten later',
+      'Autonomous execution loop with no human in the loop, plus a live dashboard showing each agent, its vote and the final outcome',
+      'Next.js dashboard deployed on Vercel with the agent runtime behind it',
+    ],
+    stack: [
+      'TypeScript',
+      'Next.js',
+      'LLM APIs',
+      'Multi-Agent Orchestration',
+      'Ethereum',
+      'ERC-8004',
+      'Web3',
+      'Vercel',
+    ],
+    results: [
+      'Four independent agents reach consensus before any capital moves',
+      'Every decision is verifiable on-chain, including the ones where the committee chose to do nothing',
+      'Runs fully autonomously with no human approval step',
+      'Built for the lablab.ai AI Trading Agents Hackathon 2026',
+    ],
+    live: 'https://hivemind-trading-agent.vercel.app',
+    github: 'https://github.com/Arslanarsal/hivemind-trading-agent',
+  },
+  {
+    slug: 'wb-connector',
+    name: 'WB Connector',
+    tagline: 'WhatsApp Connection Service',
+    description:
+      'A dedicated NestJS service that holds the live WhatsApp session and forwards every inbound message to the platform over webhooks. It exists so the messaging connection can crash, restart or scale on its own without ever taking the main application down with it.',
+    image: '/images/architecture.png',
+    role: 'Backend Engineer',
+    year: '2025 — Present',
+    status: 'In Production',
+    problem:
+      'Holding a live messaging connection inside the main application makes the whole system fragile. A dropped socket, a restart or a deploy takes messaging down with it, and every restart used to require scanning a QR code again, which is not acceptable for a business running on it.',
+    architecture: [
+      'Standalone NestJS service that owns the WhatsApp connection and nothing else, so it can be restarted independently of the main platform',
+      'Session state persisted so a restart or redeploy reconnects on its own and never asks for a new QR scan',
+      'Automatic reconnection with backoff when the connection drops, rather than silently going offline',
+      'Inbound messages, media and voice notes forwarded to the platform through signed webhooks',
+      'Media pipeline that downloads within the short-lived link window and stores files before they expire',
+      'Multiple numbers on a single instance, each with isolated session state',
+    ],
+    stack: [
+      'NestJS',
+      'Node.js',
+      'TypeScript',
+      'Baileys',
+      'Webhooks',
+      'Redis',
+      'Docker',
+    ],
+    results: [
+      'Messaging stays up independently of the main application',
+      'Restarts and deploys reconnect automatically with no QR rescan',
+      'Handles text, media, documents and voice notes end to end',
+      'Runs multiple business numbers on one instance',
+    ],
+    live: '',
+    github: 'https://github.com/Arslanarsal/WB',
   },
 ];
 
@@ -253,10 +330,27 @@ export const services = [
 
 export const experience = [
   {
+    role: 'Full Stack AI Engineer',
+    company: 'Qeyafa Vision AI',
+    location: 'United Arab Emirates · Remote',
+    period: 'August 2026 — Present',
+    description:
+      'Build AI powered products end to end, from backend services and APIs through to the frontend, deployment and production support.',
+    highlights: [
+      'Build backend services and REST APIs in Node.js, NestJS, Express and TypeScript on PostgreSQL and MongoDB',
+      'Integrate Claude, OpenAI and Gemini into product features with tool calling, memory and human handover',
+      'Build RAG pipelines over company documents with cited sources so answers can be verified',
+      'Build React and Next.js frontends and admin dashboards on top of the AI layer',
+      'Own deployment and infrastructure with Docker, CI/CD, AWS and DigitalOcean behind Nginx',
+      'Set up monitoring, structured logging and alerting so failures surface before users report them',
+    ],
+    color: '#0EA5E9',
+  },
+  {
     role: 'AI Automation Engineer · Full Stack Developer',
     company: 'Qodeon Lab',
     location: 'Remote · Global Clients',
-    period: 'January 2025 — Present',
+    period: 'January 2025 — August 2026',
     description:
       'Lead AI automation, agent, and full stack work for clients across the US, UK, Europe, and the UAE.',
     highlights: [

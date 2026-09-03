@@ -16,10 +16,16 @@ const jetbrains = JetBrains_Mono({
   display: 'swap',
 });
 
+const SITE_URL = 'https://arslan-dev-zeta.vercel.app';
+
 export const metadata: Metadata = {
-  title: 'Muhammad Arslan — AI Automation & Integration Specialist · Full Stack Developer',
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: 'Muhammad Arslan — Full Stack AI Engineer & AI Automation Specialist',
+    template: '%s · Muhammad Arslan',
+  },
   description:
-    'AI Automation & Integration Specialist and Full Stack Developer. AI agents and chatbots on OpenAI and Claude, RAG over your own data, n8n, Make, Zapier, and GoHighLevel automation, backed by Node.js, NestJS, Python, React, and Next.js.',
+    'Full Stack AI Engineer and AI Automation Specialist. Production AI agents on Claude and OpenAI, RAG over your own data, n8n, Make, Zapier and GoHighLevel automation, backed by Node.js, NestJS, Python, React and Next.js.',
   keywords: [
     'AI Automation Engineer',
     'AI Integration Specialist',
@@ -49,23 +55,89 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Muhammad Arslan' }],
   creator: 'Muhammad Arslan',
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
-    title: 'Muhammad Arslan — AI Automation & Integration Specialist',
+    title: 'Muhammad Arslan — Full Stack AI Engineer & AI Automation Specialist',
     description:
-      'AI agents, chatbots, and RAG assistants, plus n8n, Make, and Zapier automation, backed by full stack engineering in Node.js, NestJS, Python, and Next.js.',
+      'Production AI agents, RAG assistants and automation systems, backed by full stack engineering in Node.js, NestJS, Python, React and Next.js.',
+    url: SITE_URL,
+    siteName: 'Muhammad Arslan',
     type: 'website',
     locale: 'en_US',
+    images: [
+      {
+        url: '/images/profile-green-deep.jpg',
+        width: 1000,
+        height: 1000,
+        alt: 'Muhammad Arslan — Full Stack AI Engineer',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Muhammad Arslan — AI Automation & Full Stack Developer',
+    title: 'Muhammad Arslan — Full Stack AI Engineer & AI Automation Specialist',
     description:
-      'AI agents, RAG assistants, and n8n automation, built by a full stack developer.',
+      'Production AI agents, RAG assistants and automation systems, built by a full stack engineer.',
+    images: ['/images/profile-green-deep.jpg'],
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
   },
+};
+
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Muhammad Arslan',
+  alternateName: 'M. Arslan',
+  url: SITE_URL,
+  image: `${SITE_URL}/images/profile-green-deep.jpg`,
+  jobTitle: 'Full Stack AI Engineer',
+  email: 'mailto:arslanarsal455@gmail.com',
+  worksFor: {
+    '@type': 'Organization',
+    name: 'Qeyafa Vision AI',
+  },
+  alumniOf: {
+    '@type': 'CollegeOrUniversity',
+    name: 'University of Gujrat',
+  },
+  sameAs: [
+    'https://github.com/Arslanarsal',
+    'https://linkedin.com/in/m-arslan-aa21a0246',
+    'https://www.upwork.com/freelancers/arslan009',
+    'https://leetcode.com/arslanarsal/',
+  ],
+  knowsAbout: [
+    'AI Agents',
+    'Agentic AI',
+    'Large Language Models',
+    'Retrieval Augmented Generation',
+    'Model Context Protocol',
+    'AI Automation',
+    'n8n',
+    'GoHighLevel',
+    'Node.js',
+    'NestJS',
+    'TypeScript',
+    'Python',
+    'React',
+    'Next.js',
+    'PostgreSQL',
+    'MongoDB',
+    'Docker',
+    'AWS',
+  ],
 };
 
 export const viewport: Viewport = {
@@ -81,6 +153,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${jetbrains.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
+      </head>
       <body className="bg-background text-light font-sans antialiased">
         <Navigation />
         <main className="relative min-h-screen">{children}</main>

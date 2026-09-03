@@ -52,7 +52,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mt-4 text-xl md:text-2xl text-light/80 font-medium"
           >
-            AI Automation & Integration · Full Stack Developer
+            Full Stack AI Engineer · AI Automation Specialist
           </motion.h2>
 
           <motion.p
@@ -61,15 +61,15 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="mt-6 text-base md:text-lg text-muted max-w-2xl leading-relaxed"
           >
-            I build AI automation and integration systems that run in
-            production — AI agents and chatbots on OpenAI and Claude, RAG over
-            your own data, and workflows in n8n, Make, and Zapier that connect
-            your tools and remove manual work. And because I'm a full stack
-            developer, I build the product around the AI too: APIs with Node.js,
-            NestJS, and Python, apps with React and Next.js, on PostgreSQL,
-            MongoDB, and Redis, shipped with Docker and CI/CD. 3+ years
-            delivering real systems for clients across the US, UK, Europe, and
-            the UAE.
+            I build AI systems that run in production and that real users
+            depend on every day — AI agents on Claude and OpenAI that call tools
+            and take real actions, RAG over your own documents with cited
+            sources, and automation in n8n, Make, and Zapier that removes manual
+            work. Being a full stack engineer means I build the product around
+            the AI too: APIs in Node.js, NestJS, and Python, apps in React and
+            Next.js, on PostgreSQL, MongoDB, and Redis, shipped with Docker and
+            CI/CD and monitored in production. 3+ years delivering real systems
+            for clients across the US, UK, Europe, and the UAE.
           </motion.p>
 
           <motion.div
@@ -165,13 +165,13 @@ export default function Hero() {
             <div className="absolute -inset-4 bg-gradient-to-br from-accent/40 via-accent/20 to-info/20 rounded-3xl blur-2xl opacity-60 animate-pulse-slow" />
             <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-3xl overflow-hidden glass-strong border border-white/10 shadow-2xl">
               <Image
-                src="/images/profile-green.jpg"
-                alt="Muhammad Arslan — AI Automation & Full Stack Developer"
+                src="/images/profile-green-deep.jpg"
+                alt="Muhammad Arslan — Full Stack AI Engineer & AI Automation Specialist"
                 fill
                 priority
                 sizes="(max-width: 768px) 288px, 384px"
                 className="object-cover"
-                style={{ objectPosition: '50% 32%' }}
+                style={{ objectPosition: '50% 45%' }}
               />
             </div>
 
