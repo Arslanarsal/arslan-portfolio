@@ -43,7 +43,7 @@ export default function Skills() {
             <span className="text-gradient-orange">ship real systems</span>
           </h2>
           <p className="mt-4 text-muted text-lg">
-            Battle-tested in production — not just on paper.
+            Battle tested in production, not just on paper.
           </p>
         </motion.div>
 

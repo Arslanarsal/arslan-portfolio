@@ -41,7 +41,7 @@ const featured = [
     title: 'TAAKRA 2025',
     subtitle: 'University of Central Punjab',
     description:
-      'Joined TAAKRA 2025 — a coding event at UCP with the theme Victory or Vengeance.',
+      'Joined TAAKRA 2025, a coding event at UCP with the theme Victory or Vengeance.',
     icon: Trophy,
     accent: 'from-teal-500/30 to-emerald-500/20',
     type: 'Event',
@@ -97,7 +97,7 @@ export default function Gallery() {
           </p>
         </motion.div>
 
-        {/* Featured grid — professional, individual, on-stage */}
+        {/* Featured grid: professional, individual, on stage */}
         <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           {featured.map((item, i) => {
             const Icon = item.icon;
@@ -169,7 +169,7 @@ export default function Gallery() {
               <p className="mt-3 text-light/70">
                 I solve LeetCode problems regularly. 712 solved so far, 21
                 badges earned, and a 200 day streak. Strong fundamentals matter
-                — even more in the AI era.
+                and even more in the AI era.
               </p>
               <div className="mt-6 grid grid-cols-3 gap-4">
                 <div>
@@ -206,7 +206,7 @@ export default function Gallery() {
           </div>
         </motion.div>
 
-        {/* Team moments — smaller, secondary grid at the bottom */}
+        {/* Team moments: smaller, secondary grid at the bottom */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

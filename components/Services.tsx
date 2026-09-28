@@ -47,7 +47,7 @@ export default function Services() {
             How I can <span className="text-gradient-orange">help you</span>
           </h2>
           <p className="mt-4 text-muted text-lg">
-            Backend, infrastructure, and AI work — designed, built, and shipped
+            Backend, infrastructure and AI work. Designed, built and shipped
             by one engineer who owns it end to end.
           </p>
         </motion.div>

@@ -58,7 +58,7 @@ export default function Highlights() {
             </h2>
             <p className="mt-3 text-light/70">
               From React and Next.js frontends to APIs, databases, Docker,
-              Kubernetes, CI/CD, and AI agents — I build and run the whole thing.
+              Kubernetes, CI/CD and AI agents. I build and run the whole thing.
             </p>
           </div>
           <div className="flex flex-wrap gap-3">

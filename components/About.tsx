@@ -42,15 +42,15 @@ export default function About() {
           >
             <p>{profile.about}</p>
             <p>
-              I own systems end to end — API design, databases, containers,
+              I own systems end to end. API design, databases, containers,
               deployment, and monitoring. No handoffs, no &quot;that&apos;s not my
               job&quot; when something breaks. My live SaaS is{' '}
               <span className="text-light">ChatPilot</span>, a multi-tenant AI CRM
               used by paying clients in production.
             </p>
             <p>
-              I come from a strong competitive programming background — 700+
-              LeetCode problems and ICPC 2025 Regional — so problem solving,
+              I come from a strong competitive programming background, 700+
+              LeetCode problems and ICPC 2025 Regional, so problem solving,
               edge cases, and performance are second nature. I care about clean,
               observable systems that stay fast and reliable as they scale.
             </p>

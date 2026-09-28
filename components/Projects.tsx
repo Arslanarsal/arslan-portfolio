@@ -25,7 +25,7 @@ export default function Projects() {
             <span className="text-gradient-orange">that ship</span>
           </h2>
           <p className="mt-4 text-muted text-lg">
-            Real backend and AI systems — problem, architecture, and results.
+            Real backend and AI systems. Problem, architecture and results.
           </p>
         </motion.div>
 

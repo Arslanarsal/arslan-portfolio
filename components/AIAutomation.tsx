@@ -75,7 +75,7 @@ export default function AIAutomation() {
           </h2>
 
           <p className="mt-6 text-lg text-light/70 max-w-2xl">
-            I build the AI layer that sits on top of solid backends — agents,
+            I build the AI layer that sits on top of solid backends. Agents,
             LLM pipelines, custom MCP servers, and workflows that call real
             tools, take actions, and run reliably in production.
           </p>

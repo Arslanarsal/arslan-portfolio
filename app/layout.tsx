@@ -21,7 +21,7 @@ const SITE_URL = 'https://arslan-dev-zeta.vercel.app';
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Muhammad Arslan — Full Stack AI Engineer & AI Automation Specialist',
+    default: 'Muhammad Arslan | Full Stack AI Engineer & AI Automation Specialist',
     template: '%s · Muhammad Arslan',
   },
   description:
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Muhammad Arslan — Full Stack AI Engineer & AI Automation Specialist',
+    title: 'Muhammad Arslan | Full Stack AI Engineer & AI Automation Specialist',
     description:
       'Production AI agents, RAG assistants and automation systems, backed by full stack engineering in Node.js, NestJS, Python, React and Next.js.',
     url: SITE_URL,
@@ -71,13 +71,13 @@ export const metadata: Metadata = {
         url: '/images/profile-green-deep.jpg',
         width: 1000,
         height: 1000,
-        alt: 'Muhammad Arslan — Full Stack AI Engineer',
+        alt: 'Muhammad Arslan, Full Stack AI Engineer',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Muhammad Arslan — Full Stack AI Engineer & AI Automation Specialist',
+    title: 'Muhammad Arslan | Full Stack AI Engineer & AI Automation Specialist',
     description:
       'Production AI agents, RAG assistants and automation systems, built by a full stack engineer.',
     images: ['/images/profile-green-deep.jpg'],

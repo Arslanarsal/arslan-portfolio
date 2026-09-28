@@ -3,9 +3,9 @@ import Skills from '@/components/Skills';
 import AIAutomation from '@/components/AIAutomation';
 
 export const metadata: Metadata = {
-  title: 'Skills & Tech Stack — Muhammad Arslan',
+  title: 'Skills & Tech Stack | Muhammad Arslan',
   description:
-    'Backend, databases, DevOps, monitoring, and AI agent tooling — the full stack Arslan ships in production.',
+    'Backend, databases, DevOps, monitoring, and AI agent tooling. The full stack Arslan ships in production.',
 };
 
 export default function SkillsPage() {

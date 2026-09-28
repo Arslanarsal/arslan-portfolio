@@ -56,7 +56,7 @@ export default function Contact() {
           </h2>
           <p className="mt-6 text-light/70 text-lg">
             Open to backend, AI agent, and full-stack roles. Available for
-            remote, relocation, or contract work — worldwide.
+            remote, relocation or contract work, worldwide.
           </p>
         </motion.div>
 

@@ -13,9 +13,9 @@ export function generateMetadata({
   params: { slug: string };
 }): Metadata {
   const project = projects.find((p) => p.slug === params.slug);
-  if (!project) return { title: 'Project — Muhammad Arslan' };
+  if (!project) return { title: 'Project | Muhammad Arslan' };
   return {
-    title: `${project.name} — Muhammad Arslan`,
+    title: `${project.name} | Muhammad Arslan`,
     description: project.description,
   };
 }

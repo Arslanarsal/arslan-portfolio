@@ -62,7 +62,7 @@ export default function Hero() {
             className="mt-6 text-base md:text-lg text-muted max-w-2xl leading-relaxed"
           >
             I build AI systems that run in production and that real users
-            depend on every day — AI agents on Claude and OpenAI that call tools
+            depend on every day. AI agents on Claude and OpenAI that call tools
             and take real actions, RAG over your own documents with cited
             sources, and automation in n8n, Make, and Zapier that removes manual
             work. Being a full stack engineer means I build the product around
@@ -166,7 +166,7 @@ export default function Hero() {
             <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-3xl overflow-hidden glass-strong border border-white/10 shadow-2xl">
               <Image
                 src="/images/profile-green-deep.jpg"
-                alt="Muhammad Arslan — Full Stack AI Engineer & AI Automation Specialist"
+                alt="Muhammad Arslan, Full Stack AI Engineer and AI Automation Specialist"
                 fill
                 priority
                 sizes="(max-width: 768px) 288px, 384px"

@@ -3,7 +3,7 @@ import Achievements from '@/components/Achievements';
 import Gallery from '@/components/Gallery';
 
 export const metadata: Metadata = {
-  title: 'Achievements & Competitive Programming — Muhammad Arslan',
+  title: 'Achievements & Competitive Programming | Muhammad Arslan',
   description:
     'ICPC 2025 Regionalist, 700+ LeetCode, won and organized programming competitions, plus contest highlights.',
 };
