@@ -16,7 +16,7 @@ export const profile = {
   yearsExperience: 3,
   about: `I am a Full Stack AI Engineer and AI Automation Specialist with 3+ years of hands on experience shipping systems that businesses actually run in production, not demos.
 
-Most of my work is AI and automation. I build AI agents and chatbots on the OpenAI, Anthropic Claude and Google Gemini APIs using tool and function calling, conversation memory and human handover, so the AI takes real actions and knows when to pass a conversation to a person. I design RAG systems over a company's own documents with vector databases, so answers stay grounded in real data and can be traced back to a source. I build automation workflows in n8n, Make and Zapier, custom API and webhook integrations, and full GoHighLevel and CRM setups covering lead capture, routing, follow up and appointment booking.
+Most of my work is AI and automation. I build AI agents and chatbots on the OpenAI, Anthropic Claude and Google Gemini APIs using tool and function calling, conversation memory and human handover, so the AI takes real actions and knows when to pass a conversation to a person. I design RAG systems over a company's own documents with vector databases, so answers stay grounded in real data and can be traced back to a source. I build automation workflows in n8n, Make and Zapier, custom API and webhook integrations with CRMs like HubSpot, and full GoHighLevel setups covering lead capture, routing, follow up and appointment booking.
 
 I work at agency level in GoHighLevel, running sub accounts across multiple client accounts, building pipelines, custom fields and workflows for each one, and packaging setups as snapshots so onboarding the next client is repeatable rather than a rebuild. Where GoHighLevel runs out of room, the logic moves into n8n or into a service I write myself.
 
@@ -60,6 +60,8 @@ export const skills = {
     'Zapier',
     'Power Automate',
     'GoHighLevel',
+    'HubSpot',
+    'HubSpot API',
     'Webhooks',
     'REST API Integration',
     'OAuth 2.0',
@@ -338,8 +340,8 @@ export const services = [
     icon: 'Network',
     title: 'CRM & Lead Automation',
     description:
-      'GoHighLevel and CRM builds covering lead capture and routing, follow-up sequences, pipelines and appointment booking, connected to everything else through the API.',
-    items: ['GoHighLevel setups', 'Lead routing & follow-up', 'Appointment booking', 'Pipelines & reporting'],
+      'GoHighLevel and HubSpot CRM work covering lead capture and routing, follow up sequences, pipelines and appointment booking, connected to everything else through the API.',
+    items: ['GoHighLevel setups', 'HubSpot integrations', 'Lead routing & follow up', 'Pipelines & reporting'],
   },
   {
     icon: 'Layout',
@@ -461,7 +463,7 @@ export const experience = [
       'Built AI agents, chatbots and RAG assistants that answer from client data with cited sources',
       'Built automation pipelines in n8n, Make and Zapier with durable queues, retries, idempotency and alerting',
       'Delivered GoHighLevel builds at agency level across multiple client accounts, covering sub accounts, snapshots, pipelines, lead routing, follow up and booking',
-      'Wrote custom API and webhook integrations connecting CRM, ERP, point of sale, calendar and payment systems',
+      'Wrote custom API and webhook integrations connecting HubSpot, GoHighLevel and other CRMs with ERP, point of sale, calendar and payment systems',
       'Built Telegram, WhatsApp and Meta Cloud API bots and integrations',
       'Voice and call agents with OpenAI Realtime and Claude',
     ],
